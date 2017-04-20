@@ -1,0 +1,253 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="css/styles.css">
+  <link href="https://fonts.googleapis.com/css?family=Titillium+Web" rel="stylesheet">
+  <link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
+  <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+  <script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+  <!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+</head>
+<body>
+  <!--MAIN PAGE START-->
+  <div data-role="page" id="pageone">
+    <div data-role="header" class="header">
+      
+      <ul class="headerList">
+        <li><img src="img/logo.png" class="logo"></li>
+        <li><h1 class="appName">2BeFIT</h1></li>
+      </ul>
+      <!--<div data-role="navbar">
+        <ul>
+          <li><a href="#anylink">Home</a></li>
+          <li><a href="#anylink">Page Two</a></li>
+          <li><a href="#anylink">Search</a></li>
+        </ul>
+      </div>-->
+    </div>
+
+
+
+    <div data-role="main" class="ui-content">
+
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12 squareElement" id="training"><h2 class="categoryName">TRAINING</h2></div>
+        </div>
+        <div class="row">
+          <div class="col-md-12 squareElement" id="statistics"><h2 class="categoryName">STATISTICS</h2></div>
+        </div>
+        <div class="row">
+          <div class="col-md-12 squareElement" id="exercises"><h2 class="categoryName">EXERCISES</h2></div>
+        </div>
+        <div class="row">
+          <div class="col-md-12 squareElement" id="gymMap"><h2 class="categoryName">GYM MAP</h2></div>
+        </div>
+        <div class="row">
+          <div class="col-md-12 squareElement" id="bmi"><h2 class="categoryName">BMI</h2></div>
+        </div>
+      </div>
+  </div>
+        <!--<p>Click on the link to see the fade effect.</p>
+        <a href="#pagetwo" data-transition="fade">Fade to Page Two</a>
+      
+
+    <div class="ui-content">
+      <h2>TRAINING</h2>
+      <a href="#pagethree" data-transition="fade">Fade to Dialog Page</a>
+    </div>
+
+    <div data-role="controlgroup" data-type="vertical">
+      <a href="#" class="ui-btn">TRAINING</a>
+      <a href="#" class="ui-btn">PLAN</a>
+      <a href="#" class="ui-btn">CALCULATOR</a>
+      <a href="#" class="ui-btn">I TAK DALEJ</a>
+    </div>
+  </div>-->
+
+
+  <div data-role="footer" class="footer">
+    <h1>Copyright 2017</h1>
+  </div>
+  </div>
+  <!--MAIN PAGE END-->
+  <!--PAGE TWO START-->
+  <div data-role="page" id="pagetwo">
+    <div data-role="header">
+      <a href="#" class="ui-btn ui-icon-home ui-btn-icon-left">Home</a>
+      <h1>Welcome To My Homepage</h1>
+    </div>
+
+    <div data-role="main" class="ui-content">
+      <p>Click on the link to go back. <b>Note</b>: fade is default.</p>
+      <a href="#pageone">Go to Page One</a>
+    </div>
+
+    <!-- ICONS -->
+    <div data-role="main" class="ui-content">
+      <a href="#" class="ui-btn ui-icon-back ui-btn-icon-left">Back Button</a>
+    </div>
+    <div data-role="main" class="ui-content">
+      <a href="#" class="ui-btn ui-icon-info ui-btn-icon-left">Information Button</a>
+    </div>
+    <div data-role="main" class="ui-content">
+      <a href="#" class="ui-btn ui-icon-home ui-btn-icon-left">Home Button</a>
+    </div>
+
+    <!-- POP UP-->
+    <div data-role="main" class="ui-content">
+      <a href="#myPopup" data-rel="popup" class="ui-btn ui-btn-inline ui-corner-all">Show Popup</a>
+
+      <div data-role="popup" id="myPopup" class="ui-content">
+        <a href="#" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn ui-icon-delete ui-btn-icon-notext ui-btn-right">Close</a>
+        <p>I have a close button at the top right corner.</p>
+        <p><b>Tip:</b> You can also click outside to close me.</p>
+      </div>
+    </div>
+
+    <!--PANELS-->
+    <div data-role="main" class="ui-content">
+      <p>Click on one of the the buttons to open the Panel with different display modes.</p>
+      <a href="#overlayPanel" class="ui-btn ui-btn-inline ui-corner-all ui-shadow">Overlay Panel</a>
+      <a href="#revealPanel" class="ui-btn ui-btn-inline ui-corner-all ui-shadow">Reveal Panel</a>
+      <a href="#pushPanel" class="ui-btn ui-btn-inline ui-corner-all ui-shadow">Push Panel</a>
+    </div>
+
+    <div data-role="panel" id="overlayPanel" data-display="overlay">
+      <h2>Overlay Panel</h2>
+      <p>You can close the panel by clicking outside the panel, pressing the Esc key, by swiping, or by clicking the button below:</p>
+      <a href="#pageone" data-rel="close" class="ui-btn ui-btn-inline ui-shadow ui-corner-all ui-btn-a ui-icon-delete ui-btn-icon-left">Close panel</a>
+    </div>
+    <div data-role="panel" id="revealPanel" data-display="reveal">
+      <h2>Reveal Panel</h2>
+      <p>You can close the panel by clicking outside the panel, pressing the Esc key, by swiping, or by clicking the button below:</p>
+      <a href="#pageone" data-rel="close" class="ui-btn ui-btn-inline ui-shadow ui-corner-all ui-btn-a ui-icon-delete ui-btn-icon-left">Close panel</a>
+    </div>
+    <div data-role="panel" id="pushPanel" data-display="push">
+      <h2>Push Panel</h2>
+      <p>You can close the panel by clicking outside the panel, pressing the Esc key, by swiping, or by clicking the button below:</p>
+      <a href="#pageone" data-rel="close" class="ui-btn ui-btn-inline ui-shadow ui-corner-all ui-btn-a ui-icon-delete ui-btn-icon-left">Close panel</a>
+    </div>
+
+    <!--COLAPSE BLOCKS-->
+    <div data-role="main" class="ui-content">
+      <div data-role="collapsible">
+        <h1>Click me - I'm collapsible!</h1>
+        <p>I'm the expanded content.</p>
+        <div data-role="collapsible">
+          <h1>Click me - I'm a nested collapsible block!</h1>
+          <p>I'm the expanded content in the nested collapsible block.</p>
+        </div>
+      </div>
+    </div>
+
+
+    <!--TABLE WITH TOGGLE-->
+    <div data-role="main" class="ui-content">
+      <table data-role="table" data-mode="columntoggle" class="ui-responsive" id="myTable">
+        <thead>
+          <tr>
+            <th data-priority="6">CustomerID</th>
+            <th>CustomerName</th>
+            <th data-priority="1">ContactName</th>
+            <th data-priority="2">Address</th>
+            <th data-priority="3">City</th>
+            <th data-priority="4">PostalCode</th>
+            <th data-priority="5">Country</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>1</td>
+            <td>Alfreds Futterkiste</td>
+            <td>Maria Anders</td>
+            <td>Obere Str. 57</td>
+            <td>Berlin</td>
+            <td>12209</td>
+            <td>Germany</td>
+          </tr>
+          <tr>
+            <td>2</td>
+            <td>Antonio Moreno Taquería</td>
+            <td>Antonio Moreno</td>
+            <td>Mataderos 2312</td>
+            <td>México D.F.</td>
+            <td>05023</td>
+            <td>Mexico</td>
+          </tr>
+          <tr>
+            <td>3</td>
+            <td>Around the Horn</td>
+            <td>Thomas Hardy</td>
+            <td>120 Hanover Sq.</td>
+            <td>London</td>
+            <td>WA1 1DP</td>
+            <td>UK</td>
+          </tr>
+          <tr>
+            <td>4</td>
+            <td>Berglunds snabbköp</td>
+            <td>Christina Berglund</td>
+            <td>Berguvsvägen 8</td>
+            <td>Luleå</td>
+            <td>S-958 22</td>
+            <td>Sweden</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+
+    <!-- GRID -->
+    <div data-role="main" class="ui-content">
+      <p>Five-column Layout:</p>
+      <div class="ui-grid-d">
+        <div class="ui-block-a">
+          <a href="#" class="ui-btn ui-corner-all ui-shadow">First Column</a><br>
+          <span>First Column: This is some text. This is some text. This is some text. This is some text. This is some text.</span>
+        </div>
+        <div class="ui-block-b">
+          <a href="#" class="ui-btn ui-corner-all ui-shadow">Second Column</a><br>
+          <span>Second Column: This is some text. This is some text. This is some text. This is some text.</span>
+        </div>
+        <div class="ui-block-c">
+          <a href="#" class="ui-btn ui-corner-all ui-shadow">Third Column</a><br>
+          <span>Third Column: This is some text. This is some text. This is some text. This is some text.</span>
+        </div>
+        <div class="ui-block-d">
+          <a href="#" class="ui-btn ui-corner-all ui-shadow">Fourth Column</a><br>
+          <span>Fourth Column: This is some text. This is some text. This is some text. This is some text.</span>
+        </div>
+        <div class="ui-block-e">
+          <a href="#" class="ui-btn ui-corner-all ui-shadow">Fifth Column</a><br>
+          <span>Fifth Column: This is some text. This is some text. This is some text. This is some text.</span>
+        </div>
+      </div>
+    </div>
+
+    <div data-role="footer">
+      <h1>Footer Text</h1>
+    </div>
+  </div>
+  <!--PAGE TWO END-->
+  <!--PAGE THREE START-->
+  <div data-role="page" data-dialog="true" id="pagethree">
+    <div data-role="header">
+      <h1>I'm A Dialog Box!</h1>
+    </div>
+
+    <div data-role="main" class="ui-content">
+      <p>Click on the link to go to Page One. <b>Note</b>: fade is default.</p>
+      <a href="#pageone">Go to Page One</a>
+      <p><b>Tip:</b> You can also close the dialog box by clicking the X button in header. This will automatically transition back to the page you came from, with the same transition effect (fade) used to open this dialog.</p>
+    </div>
+
+    <div data-role="footer">
+      <h1>Footer Text in Dialog</h1>
+    </div>
+  </div>
+  <!--PAGE THREE END-->
+</body>
+</html>

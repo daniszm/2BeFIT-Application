@@ -1,0 +1,84 @@
+* {
+    font-family: 'Titillium Web', sans-serif;
+}
+
+.header {
+    text-align: center;
+    font-size: 30px;
+    background-color: #CBFF31 !important;
+}
+
+.footer {
+    text-align: center;
+    font-size: 20px;
+    background-color: #b9ef15 !important;
+}
+
+.ui-content {
+    background-color: #ffffff !important;;
+background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='4' height='4' viewBox='0 0 4 4'%3E%3Cpath fill='%231c1c1c' fill-opacity='0.25' d='M1 3h1v1H1V3zm2-2h1v1H3V1z'%3E%3C/path%3E%3C/svg%3E");
+
+}
+
+.logo {
+    margin: -5px 0 10px -50px;
+    width: 50px;
+    height: auto;
+    display: inline-block;
+}
+
+.appName {
+    font-size: 45px;
+    font-weight: bold;
+    margin-top: 20px;
+    color: #000 !important;
+    display: inline-block;
+}
+
+.headerList li{
+    display: inline;
+}
+
+.col-md-12.squareElement {
+    text-align: center;
+    padding: 50px 10px 50px 10px;
+    margin: 10px 0 10px 0;
+    border-radius: 10px;
+}
+
+#training, #statistics, #exercises, #gymMap, #bmi {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center; 
+}
+
+#training {
+    background-image: url("../img/training.jpg");
+}
+
+#statistics {
+    background-image: url("../img/statistics.jpg"); 
+}
+
+#exercises {
+    background-image: url("../img/exercises.jpg");
+}
+
+#gymMap {
+    background-image: url("../img/location.jpg");
+}
+
+#bmi {
+    background-image: url("../img/bmi.jpg");
+}
+
+.categoryName {
+    font-size: 3.5em;
+    font-weight: bold;
+    color: #FFF;
+    padding: 10px 0 10px 0;
+    /*text-shadow: 0px 0px 25px rgba(79, 79, 79, 1);*/
+    background-color: rgba(0, 0, 0, 0.6);
+    border-radius: 10px;
+    margin: 10px;
+}
