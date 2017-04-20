@@ -35,6 +35,20 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
     display: inline-block;
 }
 
+.pageName {
+    font-size: 35px !important;
+    font-weight: bold;
+    margin: 0 !important;
+    color: #000 !important;
+    text-align: center;
+}
+
+.backButton {
+    position: absolute;
+    left: 15px;
+    top: 20px;
+}
+
 .headerList li{
     display: inline;
 }
@@ -44,6 +58,24 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
     padding: 50px 10px 50px 10px;
     margin: 10px 0 10px 0;
     border-radius: 10px;
+}
+
+.col-md-12.section {
+    text-align: center;
+    padding: 5px 10px 0 10px;
+    /*margin: 10px 0 10px 0;*/
+}
+
+.sectionName {
+    font-size: 3.1em;
+    font-weight: bold;
+    color: #000;
+    padding: 10px 0 10px 0;
+    /*text-shadow: 0px 0px 25px rgba(79, 79, 79, 1);*/
+    background-color: rgba(255, 255, 255, 1);
+    border-radius: 0;
+    border: 2px solid #595959;
+    margin: 10px;
 }
 
 #training, #statistics, #exercises, #gymMap, #bmi {

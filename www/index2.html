@@ -27,25 +27,14 @@
         </ul>
       </div>-->
     </div>
-
-
-
     <div data-role="main" class="ui-content">
 
       <div class="container">
         <div class="row">
-          <div class="col-md-12 squareElement" id="training"><h2 class="categoryName">TRAINING</h2></div>
-        </div>
-        <div class="row">
+          <a href="#trainingPage"><div class="col-md-12 squareElement" id="training"><h2 class="categoryName">TRAINING</h2></div></a>
           <div class="col-md-12 squareElement" id="statistics"><h2 class="categoryName">STATISTICS</h2></div>
-        </div>
-        <div class="row">
           <div class="col-md-12 squareElement" id="exercises"><h2 class="categoryName">EXERCISES</h2></div>
-        </div>
-        <div class="row">
           <div class="col-md-12 squareElement" id="gymMap"><h2 class="categoryName">GYM MAP</h2></div>
-        </div>
-        <div class="row">
           <div class="col-md-12 squareElement" id="bmi"><h2 class="categoryName">BMI</h2></div>
         </div>
       </div>
@@ -67,26 +56,27 @@
     </div>
   </div>-->
 
-
   <div data-role="footer" class="footer">
     <h1>Copyright 2017</h1>
   </div>
   </div>
   <!--MAIN PAGE END-->
-  <!--PAGE TWO START-->
-  <div data-role="page" id="pagetwo">
-    <div data-role="header">
-      <a href="#" class="ui-btn ui-icon-home ui-btn-icon-left">Home</a>
-      <h1>Welcome To My Homepage</h1>
+  <!--TRAINING PAGE START-->
+  <div data-role="page" id="trainingPage">
+    <div data-role="header" class="header">
+        <div data-role="main" class="backButton"><a href="#pageone"><img src="img/backButton.png"></a></div>
+        <h1 class="pageName">TRAINING</h1>
     </div>
-
-    <div data-role="main" class="ui-content">
-      <p>Click on the link to go back. <b>Note</b>: fade is default.</p>
-      <a href="#pageone">Go to Page One</a>
-    </div>
-
+     <div data-role="main" class="container ui-content">
+        <div class="row">
+          <div class="col-md-12 section" id="legs"><h2 class="sectionName">LEGS</h2></div>
+          <div class="col-md-12 section"><h2 class="sectionName">ARMS</h2></div>
+          <div class="col-md-12 section"><h2 class="sectionName">DOM</h2></div>
+          <div class="col-md-12 section"><h2 class="sectionName">ASS</h2></div>
+        </div>
+     </div>
     <!-- ICONS -->
-    <div data-role="main" class="ui-content">
+    <!--<div data-role="main" class="ui-content">
       <a href="#" class="ui-btn ui-icon-back ui-btn-icon-left">Back Button</a>
     </div>
     <div data-role="main" class="ui-content">
@@ -94,8 +84,9 @@
     </div>
     <div data-role="main" class="ui-content">
       <a href="#" class="ui-btn ui-icon-home ui-btn-icon-left">Home Button</a>
-    </div>
+    </div>-->
 
+     
     <!-- POP UP-->
     <div data-role="main" class="ui-content">
       <a href="#myPopup" data-rel="popup" class="ui-btn ui-btn-inline ui-corner-all">Show Popup</a>
@@ -227,9 +218,9 @@
       </div>
     </div>
 
-    <div data-role="footer">
-      <h1>Footer Text</h1>
-    </div>
+  <div data-role="footer" class="footer">
+    <h1>Copyright 2017</h1>
+  </div>
   </div>
   <!--PAGE TWO END-->
   <!--PAGE THREE START-->
@@ -244,8 +235,8 @@
       <p><b>Tip:</b> You can also close the dialog box by clicking the X button in header. This will automatically transition back to the page you came from, with the same transition effect (fade) used to open this dialog.</p>
     </div>
 
-    <div data-role="footer">
-      <h1>Footer Text in Dialog</h1>
+    <div data-role="footer" class="footer">
+      <h1>Copyright 2017</h1>
     </div>
   </div>
   <!--PAGE THREE END-->
