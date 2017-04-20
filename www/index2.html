@@ -39,22 +39,6 @@
         </div>
       </div>
   </div>
-        <!--<p>Click on the link to see the fade effect.</p>
-        <a href="#pagetwo" data-transition="fade">Fade to Page Two</a>
-      
-
-    <div class="ui-content">
-      <h2>TRAINING</h2>
-      <a href="#pagethree" data-transition="fade">Fade to Dialog Page</a>
-    </div>
-
-    <div data-role="controlgroup" data-type="vertical">
-      <a href="#" class="ui-btn">TRAINING</a>
-      <a href="#" class="ui-btn">PLAN</a>
-      <a href="#" class="ui-btn">CALCULATOR</a>
-      <a href="#" class="ui-btn">I TAK DALEJ</a>
-    </div>
-  </div>-->
 
   <div data-role="footer" class="footer">
     <h1>Copyright 2017</h1>
@@ -67,9 +51,9 @@
         <div data-role="main" class="backButton"><a href="#pageone"><img src="img/backButton.png"></a></div>
         <h1 class="pageName">TRAINING</h1>
     </div>
-     <div data-role="main" class="container ui-content">
+     <div data-role="main" class="container-fluid ui-content">
         <div class="row">
-          <div class="col-md-12 section" id="legs"><h2 class="sectionName">LEGS</h2></div>
+          <a href="#legsPage"><div class="col-md-12 section" id="legs"><h2 class="sectionName">LEGS</h2></div></a>
           <div class="col-md-12 section"><h2 class="sectionName">ARMS</h2></div>
           <div class="col-md-12 section"><h2 class="sectionName">DOM</h2></div>
           <div class="col-md-12 section"><h2 class="sectionName">ASS</h2></div>
@@ -224,17 +208,32 @@
   </div>
   <!--PAGE TWO END-->
   <!--PAGE THREE START-->
-  <div data-role="page" data-dialog="true" id="pagethree">
-    <div data-role="header">
-      <h1>I'm A Dialog Box!</h1>
+  <div data-role="page" id="legsPage">
+    <div data-role="header" class="header">
+        <div data-role="main" class="backButton"><a href="#trainingPage"><img src="img/backButton.png"></a></div>
+        <h1 class="pageName">LEGS</h1>
     </div>
+    <div class="centering">
+      <div class="container-fluid headerImg" id="legsHeaderPhoto">
+      </div>
+      <br>
+      <h2>EXCERCISES:</h2>
+        <ol type="1">
+          <li>Coffee</li>
+          <li>Tea</li>
+          <li>Milk</li>
+        </ol>
 
-    <div data-role="main" class="ui-content">
-      <p>Click on the link to go to Page One. <b>Note</b>: fade is default.</p>
-      <a href="#pageone">Go to Page One</a>
-      <p><b>Tip:</b> You can also close the dialog box by clicking the X button in header. This will automatically transition back to the page you came from, with the same transition effect (fade) used to open this dialog.</p>
+      <div data-role="main" class="ui-content">
+        <a href="#myPopup" data-rel="popup" class="ui-btn ui-btn-inline ui-corner-all">Show Popup</a>
+        <div data-role="popup" id="myPopup" class="ui-content">
+          <a href="#" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn ui-icon-delete ui-btn-icon-notext ui-btn-right">Close</a>
+          <p>I have a close button at the top right corner.</p>
+          <p><b>Tip:</b> You can also click outside to close me.</p>
+        </div>
+      </div>
+      <iframe width="auto" height="315" src="https://www.youtube.com/embed/Aj3Y58DQVI0" frameborder="0" allowfullscreen></iframe>
     </div>
-
     <div data-role="footer" class="footer">
       <h1>Copyright 2017</h1>
     </div>
