@@ -1,0 +1,150 @@
+    <!-- ICONS -->
+    <!--<div data-role="main" class="ui-content">
+      <a href="#" class="ui-btn ui-icon-back ui-btn-icon-left">Back Button</a>
+    </div>
+    <div data-role="main" class="ui-content">
+      <a href="#" class="ui-btn ui-icon-info ui-btn-icon-left">Information Button</a>
+    </div>
+    <div data-role="main" class="ui-content">
+      <a href="#" class="ui-btn ui-icon-home ui-btn-icon-left">Home Button</a>
+    </div>-->
+
+     
+    <!-- POP UP-->
+    <div data-role="main" class="ui-content">
+      <a href="#myPopup" data-rel="popup" class="ui-btn ui-btn-inline ui-corner-all">Show Popup</a>
+
+      <div data-role="popup" id="myPopup" class="ui-content">
+        <a href="#" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn ui-icon-delete ui-btn-icon-notext ui-btn-right">Close</a>
+        <p>I have a close button at the top right corner.</p>
+        <p><b>Tip:</b> You can also click outside to close me.</p>
+      </div>
+    </div>
+
+    <!--PANELS-->
+    <div data-role="main" class="ui-content">
+      <p>Click on one of the the buttons to open the Panel with different display modes.</p>
+      <a href="#overlayPanel" class="ui-btn ui-btn-inline ui-corner-all ui-shadow">Overlay Panel</a>
+      <a href="#revealPanel" class="ui-btn ui-btn-inline ui-corner-all ui-shadow">Reveal Panel</a>
+      <a href="#pushPanel" class="ui-btn ui-btn-inline ui-corner-all ui-shadow">Push Panel</a>
+    </div>
+
+    <div data-role="panel" id="overlayPanel" data-display="overlay">
+      <h2>Overlay Panel</h2>
+      <p>You can close the panel by clicking outside the panel, pressing the Esc key, by swiping, or by clicking the button below:</p>
+      <a href="#pageone" data-rel="close" class="ui-btn ui-btn-inline ui-shadow ui-corner-all ui-btn-a ui-icon-delete ui-btn-icon-left">Close panel</a>
+    </div>
+    <div data-role="panel" id="revealPanel" data-display="reveal">
+      <h2>Reveal Panel</h2>
+      <p>You can close the panel by clicking outside the panel, pressing the Esc key, by swiping, or by clicking the button below:</p>
+      <a href="#pageone" data-rel="close" class="ui-btn ui-btn-inline ui-shadow ui-corner-all ui-btn-a ui-icon-delete ui-btn-icon-left">Close panel</a>
+    </div>
+    <div data-role="panel" id="pushPanel" data-display="push">
+      <h2>Push Panel</h2>
+      <p>You can close the panel by clicking outside the panel, pressing the Esc key, by swiping, or by clicking the button below:</p>
+      <a href="#pageone" data-rel="close" class="ui-btn ui-btn-inline ui-shadow ui-corner-all ui-btn-a ui-icon-delete ui-btn-icon-left">Close panel</a>
+    </div>
+
+    <!--COLAPSE BLOCKS-->
+    <div data-role="main" class="ui-content">
+      <div data-role="collapsible">
+        <h1>Click me - I'm collapsible!</h1>
+        <p>I'm the expanded content.</p>
+        <div data-role="collapsible">
+          <h1>Click me - I'm a nested collapsible block!</h1>
+          <p>I'm the expanded content in the nested collapsible block.</p>
+        </div>
+      </div>
+    </div>
+
+
+    <!--TABLE WITH TOGGLE-->
+    <div data-role="main" class="ui-content">
+      <table data-role="table" data-mode="columntoggle" class="ui-responsive" id="myTable">
+        <thead>
+          <tr>
+            <th data-priority="6">CustomerID</th>
+            <th>CustomerName</th>
+            <th data-priority="1">ContactName</th>
+            <th data-priority="2">Address</th>
+            <th data-priority="3">City</th>
+            <th data-priority="4">PostalCode</th>
+            <th data-priority="5">Country</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>1</td>
+            <td>Alfreds Futterkiste</td>
+            <td>Maria Anders</td>
+            <td>Obere Str. 57</td>
+            <td>Berlin</td>
+            <td>12209</td>
+            <td>Germany</td>
+          </tr>
+          <tr>
+            <td>2</td>
+            <td>Antonio Moreno Taquería</td>
+            <td>Antonio Moreno</td>
+            <td>Mataderos 2312</td>
+            <td>México D.F.</td>
+            <td>05023</td>
+            <td>Mexico</td>
+          </tr>
+          <tr>
+            <td>3</td>
+            <td>Around the Horn</td>
+            <td>Thomas Hardy</td>
+            <td>120 Hanover Sq.</td>
+            <td>London</td>
+            <td>WA1 1DP</td>
+            <td>UK</td>
+          </tr>
+          <tr>
+            <td>4</td>
+            <td>Berglunds snabbköp</td>
+            <td>Christina Berglund</td>
+            <td>Berguvsvägen 8</td>
+            <td>Luleå</td>
+            <td>S-958 22</td>
+            <td>Sweden</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+
+    <!-- GRID -->
+    <div data-role="main" class="ui-content">
+      <p>Five-column Layout:</p>
+      <div class="ui-grid-d">
+        <div class="ui-block-a">
+          <a href="#" class="ui-btn ui-corner-all ui-shadow">First Column</a><br>
+          <span>First Column: This is some text. This is some text. This is some text. This is some text. This is some text.</span>
+        </div>
+        <div class="ui-block-b">
+          <a href="#" class="ui-btn ui-corner-all ui-shadow">Second Column</a><br>
+          <span>Second Column: This is some text. This is some text. This is some text. This is some text.</span>
+        </div>
+        <div class="ui-block-c">
+          <a href="#" class="ui-btn ui-corner-all ui-shadow">Third Column</a><br>
+          <span>Third Column: This is some text. This is some text. This is some text. This is some text.</span>
+        </div>
+        <div class="ui-block-d">
+          <a href="#" class="ui-btn ui-corner-all ui-shadow">Fourth Column</a><br>
+          <span>Fourth Column: This is some text. This is some text. This is some text. This is some text.</span>
+        </div>
+        <div class="ui-block-e">
+          <a href="#" class="ui-btn ui-corner-all ui-shadow">Fifth Column</a><br>
+          <span>Fifth Column: This is some text. This is some text. This is some text. This is some text.</span>
+        </div>
+      </div>
+    </div>
+
+          <!--<div data-role="navbar">
+        <ul>
+          <li><a href="#anylink">Home</a></li>
+          <li><a href="#anylink">Page Two</a></li>
+          <li><a href="#anylink">Search</a></li>
+        </ul>
+      </div>-->
