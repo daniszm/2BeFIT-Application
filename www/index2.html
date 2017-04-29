@@ -26,39 +26,21 @@ exercisesPage
       <div class="container">
         <div class="row">
           <a href="#trainingPage"><div class="col-md-12 squareElement" id="training"><h2 class="categoryName">TRAINING</h2></div></a>
-          <div class="col-md-12 squareElement" id="statistics"><h2 class="categoryName">STATISTICS</h2></div>
+          <a href="#statisticsPage"><div class="col-md-12 squareElement" id="statistics"><h2 class="categoryName">STATISTICS</h2></div></a>
            <a href="#exercisesPage"><div class="col-md-12 squareElement" id="exercises"><h2 class="categoryName">EXERCISES</h2></div></a>
           <div class="col-md-12 squareElement" id="gymMap"><h2 class="categoryName">GYM MAP</h2></div>
            <a href="#bmiPage"><div class="col-md-12 squareElement" id="bmi"><h2 class="categoryName">BMI</h2></div></a>
         </div>
       </div>
   </div>
-
+statisticsPage
   <div data-role="footer" class="footer">
     <h1>Copyright 2017</h1>
   </div>
   </div>
   <!--MAIN PAGE END-->
-  <!--TRAINING PAGE START-->
-  <div data-role="page" id="trainingPage">
-    <div data-role="header" class="header">
-        <div data-role="main" class="backButton"><a href="#pageone"><img src="img/backButton.png"></a></div>
-        <h1 class="pageName">TRAINING</h1>
-    </div>
-     <div data-role="main" class="container-fluid ui-content">
-        <div class="row">
-          <a href="#legsPage"><div class="col-md-12 section" id="legs"><h2 class="sectionName">LEGS</h2></div></a>
-          <div class="col-md-12 section"><h2 class="sectionName">ARMS</h2></div>
-          <div class="col-md-12 section"><h2 class="sectionName">DOM</h2></div>
-          <div class="col-md-12 section"><h2 class="sectionName">ASS</h2></div>
-        </div>
-     </div>
-
-  <div data-role="footer" class="footer">
-    <h1>Copyright 2017</h1>
-  </div>
-  </div>
   
+
    <!--EXERCISES PAGE START-->
   <div data-role="page" id="exercisesPage">
     <div data-role="header" class="header">
@@ -383,6 +365,53 @@ exercisesPage
 
   <!--EXERCISES END-->
 
+  <!-- TRAINING PAGE START -->
+
+    <div data-role="page" id="trainingPage">
+    <div data-role="header" class="header">
+        <div data-role="main" class="backButton"><a href="#pageone"><img src="img/backButton.png"></a></div>
+        <h1 class="pageName">TRAINING</h1>
+    </div>
+    <div class="centering">
+      <div class="container-fluid headerImg" id="bmiPhoto"></div> <!-- TODO CHANGE IMG-->
+
+      <div data-role="main" class="ui-content">
+		    <form method="post" action="/action_page_post.php">
+				  <label for="select-choice-a" class="select">Body part:</label>
+				  <select name="select-choice-a" id="select-choice-a" data-native-menu="false">
+				     <option></option>
+					 <option>LEGS</option>
+					 <option>CHEST</option>
+					 <option>BACK</option>
+					 <option>SHOULDERS</option>
+					 <option>ARMS</option>
+					 <option>ABS</option>
+				  </select>
+				  <label for="exercise">Exercise name:</label>
+				  <input type="text" name="exercise" id="exercise"> 
+				  <label for="sets">Sets:</label>
+				  <input type="range" name="sets" id="sets" value="2" min="0" max="4" data-highlight="true">
+				  <label for="reps">Reps:</label>
+				  <input type="range" name="reps" id="reps" value="12" min="0" max="25" data-highlight="true">
+				  <label for="weight">Weight:</label>
+				  <input type="range" name="weight" id="weight" value="50" min="0" max="100" data-highlight="true">
+				  <input type="submit" data-inline="true" value="ADD EXERCISE">
+			</form>
+      </div>
+    <div data-role="footer" class="footer">
+      <h1>Copyright 2017</h1>
+    </div>
+  </div>
+  </div>
+  
+    <!-- TRAINING PAGE END -->
+  
+  
+  
+  
+  
+  
+  
   <!--BMI PAGE START-->
   <div data-role="page" id="bmiPage">
     <div data-role="header" class="header">
