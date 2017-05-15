@@ -89,13 +89,37 @@ function getExercises(){
 		url: "https://api.mlab.com/api/1/databases/fitappdb/collections/exercises?apiKey=p5W6JyOLc6_yXmLzinofkvztB0Yu7rYJ",
 	}).done(function(data){
 		var output = '<div>';
+		var arrbodyPart = [];
+		var arrname = [];
+		var arrsets = [];
+		var arrreps = [];
+		var arrweight = [];
+		
 		$.each(data, function(key, data){
-			output += '<div>';
-			console.log(data.bodyPart);
-			output += '<p>'+data.bodyPart+'</p>';
+			arrbodyPart.push(data.bodyPart);
+			arrname.push(data.name);
+			arrsets.push(data.sets);
+			arrreps.push(data.reps);
+			arrweight.push(data.weight);
+
+			// console.log(data.bodyPart);
+			// var test = data.bodyPart;
+			// console.log(test);
+			// output += '<p>'+data.bodyPart+'</p>';
 		});
-		output = '</div>';
-		$('#exercisesGrid').html(output);
+
+		arrLen = arrbodyPart.length;
+		text = "<table>";
+		for (i = 0; i < arrLen; i++) {
+			text += "<tr><td>" + [i+1] + "</td><td>" + arrbodyPart[i] + "</td><td>" + arrname[i] + "</td><td>" + arrsets[i] + "</td><td>" + arrreps[i] + "</td><td>" + arrweight[i] +"</td></tr>";
+		}
+		text += "</table>";
+		document.getElementById("exercisesGrid").innerHTML = text;
+
+		// for (var i=0;i<arr.length;i++) {
+		// 	document.getElementById('exercisesGrid').innerHTML = arr[i];
+		// 	$('#exercisesGrid').append(arr[i]);
+		// }
 	});
 }
 
