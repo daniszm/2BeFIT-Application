@@ -1,0 +1,42 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="css/styles.css">
+  <link href="https://fonts.googleapis.com/css?family=Titillium+Web" rel="stylesheet">
+  <link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
+  <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+  <script src="js/main.js"></script>
+  <script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+  <!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+</head>
+<body>
+  
+  
+      <div data-role="main" class="ui-content">
+		    <form method="post" action="/action_page_post.php">
+				  <label for="select-choice-a" class="select">Body part:</label>
+				  <select id="bodyPart" name="select-choice-a" id="select-choice-a" data-native-menu="false">
+				     <option></option>
+					 <option>LEGS</option>
+					 <option>CHEST</option>
+					 <option>BACK</option>
+					 <option>SHOULDERS</option>
+					 <option>ARMS</option>
+					 <option>ABS</option>
+				  </select>
+				  <label for="exercise">Exercise name:</label>
+				  <input id="exerciseName" type="text" name="exercise" id="exercise"> 
+				  <label for="sets">Sets:</label>
+				  <input id="setsInput" type="range" name="sets" id="sets" value="2" min="0" max="4" data-highlight="true">
+				  <label for="reps">Reps:</label>
+				  <input id="repsInput" type="range" name="reps" id="reps" value="12" min="0" max="25" data-highlight="true">
+				  <label for="weight">Weight:</label>
+				  <input id="weightInput" type="range" name="weight" id="weight" value="50" min="0" max="100" data-highlight="true">
+				  <input id="submitBtnExercise" type="submit" data-inline="true" value="ADD EXERCISE">
+			</form>
+      </div>
+  
+</body>
+</html>
