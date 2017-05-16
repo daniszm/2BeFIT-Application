@@ -36,7 +36,7 @@ function getTime() {
   var day = dateObj.getUTCDate();
   var year = dateObj.getUTCFullYear();
 
-  return newdate = day + "." + month + "." + year;
+  return newdate = day + "." + month + "<br>" + year;
 }
 
 
@@ -81,7 +81,7 @@ $(document).on("pageinit", "#map-page", function () {
   }
   function drawMap(latlng) {
     var myOptions = {
-      zoom: 10,
+      zoom: 13,
       center: latlng,
       mapTypeId: google.maps.MapTypeId.ROADMAP
     };
@@ -91,14 +91,14 @@ $(document).on("pageinit", "#map-page", function () {
       position: latlng,
       map: map,
       title: "ME",
-      //icon: 'pinkball.png'
+      icon: 'img/man.png'
     });
 
     var marker1 = new google.maps.Marker({
       position: new google.maps.LatLng(50.07128, 19.93696),
       map: map,
       title: "Platinium Fitness!",
-      //icon:'hatnla.png'
+      icon: 'img/hantel.png'
     });
   }
 });
@@ -168,11 +168,11 @@ function getExercises() {
     });
 
     arrLen = arrbodyPart.length;
-    text = "<table><tr><td>test</td><td>test</td><td>test</td><td>test</td><td>test</td><td>test</td><td>test</td></tr>";
+    text = "<table class='statisticsTable'><tbody style='overflow-x: visible;'><tr><td><b>DATE</b></td><td><b>BODY</b><br><b>PART</b></td><td><b>NAME</b></td><td><b>SETS/REPS/WEIGHT</b></td></tr>";
     for (i = 0; i < arrLen; i++) {
-      text += "<tr><td>" + time[i] + "</td><td>" + arrbodyPart[i] + "</td><td>" + arrname[i] + "</td><td>" + arrsets[i] + "</td><td>" + arrreps[i] + "</td><td>" + arrweight[i] + "</td></tr>";
+      text += "<tr><td>" + time[i] + "</td><td>" + arrbodyPart[i] + "</td><td>" + arrname[i] + "</td><td>" + arrsets[i] + "/" + arrreps[i] + "/" + arrweight[i] + "</td></tr>";
     }
-    text += "</table>";
+    text += "</tbody></table>";
     document.getElementById("exercisesGrid").innerHTML = text;
 
     // for (var i=0;i<arr.length;i++) {
