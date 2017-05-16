@@ -9,13 +9,13 @@
   <script src="js/main.js"></script>
   <script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
   <!-- Latest compiled and minified CSS -->
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 </head>
 <body onload="getExercises()">
   <!--MAIN PAGE START-->
   <div data-role="page" id="pageone">
     <div data-role="header" class="header">
-      
+
       <ul class="headerList">
         <li><img src="img/logo.png" class="logo"></li>
         <li><h1 class="appName">2BeFIT</h1></li>
@@ -26,102 +26,9 @@
         <div class="row">
           <a href="#trainingPage"><div class="col-md-12 squareElement" id="training"><h2 class="categoryName">TRAINING</h2></div></a>
           <a href="#statisticsPage" onclick="getExercises()"><div class="col-md-12 squareElement" id="statistics"><h2 class="categoryName">STATISTICS</h2></div></a>
-           <a href="#exercisesPage"><div class="col-md-12 squareElement" id="exercises"><h2 class="categoryName">EXERCISES</h2></div></a>
+          <a href="#exercisesPage"><div class="col-md-12 squareElement" id="exercises"><h2 class="categoryName">EXERCISES</h2></div></a>
           <div class="col-md-12 squareElement" id="gymMap"><h2 class="categoryName">GYM MAP</h2></div>
-           <a href="#bmiPage"><div class="col-md-12 squareElement" id="bmi"><h2 class="categoryName">BMI</h2></div></a>
-        </div>
-      </div>
-  </div>
-  <div data-role="footer" class="footer">
-    <h1>Copyright 2017</h1>
-  </div>
-  </div>
-  <!--MAIN PAGE END-->
-  
-
-   <!--EXERCISES PAGE START-->
-  <div data-role="page" id="exercisesPage">
-    <div data-role="header" class="header">
-        <div data-role="main" class="backButton"><a href="#pageone"><img src="img/backButton.png"></a></div>
-        <h1 class="pageName">EXERCISES</h1>
-    </div>
-     <div data-role="main" class="container-fluid ui-content">
-        <div class="row">
-          <a href="#legsPage"><div class="col-md-12 section" id="legs"><h2 class="sectionName">LEGS</h2></div></a>
-          <a href="#chestPage"><div class="col-md-12 section" id="chest"><h2 class="sectionName">CHEST</h2></div></a>
-          <a href="#backPage"><div class="col-md-12 section" id="back"><h2 class="sectionName">BACK</h2></div></a>
-		  <a href="#shouldersPage"><div class="col-md-12 section" id="shoulders"><h2 class="sectionName">SHOULDERS</h2></div></a>
-		  <a href="#armsPage"><div class="col-md-12 section" id="arms"><h2 class="sectionName">ARMS</h2></div></a>
-		  <a href="#absPage"><div class="col-md-12 section" id="abs"><h2 class="sectionName">ABS</h2></div></a>
-        </div>
-     </div>
-
-  <div data-role="footer" class="footer">
-    <h1>Copyright 2017</h1>
-  </div>
-  </div>
-  
-  <div data-role="page" id="barbellSquat">
-    <div data-role="header" class="header">
-        <div data-role="main" class="backButton"><a href="#legsPage"><img src="img/backButton.png"></a></div>
-        <h1 class="pageName">Barbell Squat</h1>
-    </div>
-     <div data-role="main" class="container-fluid ui-content">
-        <div class="row">
-          <iframe width="auto" height="315" src="https://www.youtube.com/embed/tVB1q8zkP3o" frameborder="0" allowfullscreen></iframe>
-		  <p>
-		  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-		  </p>
-        </div>
-     </div>
-
-  <div data-role="footer" class="footer">
-    <h1>Copyright 2017</h1>
-  </div>
-  </div>
-  
-  
-  <!--LEGS PAGE START-->
-  <div data-role="page" id="legsPage">
-    <div data-role="header" class="header">
-        <div data-role="main" class="backButton"><a href="#exercisesPage"><img src="img/backButton.png"></a></div>
-        <h1 class="pageName">LEGS</h1>
-    </div>
-    <div class="centering">
-      <div class="container-fluid headerImg" id="legsHeaderPhoto">
-      </div>
-      <br>
-      <h2>EXCERCISES:</h2>
-      <div data-role="main" class="ui-content">
-        <a href="#barbellSquat" class="ui-btn ui-btn-inline ui-corner-all pageName" >Barbell Squat</a>
-        <div data-role="page" id="legsPopup1" class="ui-content">
-          <a href="#" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn ui-icon-delete ui-btn-icon-notext ui-btn-right">Close</a>
-          <p>Barbell Squat</p>
-		  
-        </div>
-		<a href="#legsPopup2" data-rel="popup" class="ui-btn ui-btn-inline ui-corner-all pageName">Dumbbell Step Ups</a>
-		<div data-role="popup" id="legsPopup2" class="ui-content">
-          <a href="#" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn ui-icon-delete ui-btn-icon-notext ui-btn-right">Close</a>
-          <p>Dumbbell Step Ups</p>
-		  <iframe width="auto" height="315" src="https://www.youtube.com/embed/7AtIjR-QqVA" frameborder="0" allowfullscreen></iframe>
-        </div>
-		<a href="#legsPopup3" data-rel="popup" class="ui-btn ui-btn-inline ui-corner-all">Leg Press</a>
-		<div data-role="popup" id="legsPopup3" class="ui-content">
-          <a href="#" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn ui-icon-delete ui-btn-icon-notext ui-btn-right">Close</a>
-          <p>Leg Press</p>
-		  <iframe width="auto" height="315" src="https://www.youtube.com/embed/3R0SOJ3alTA" frameborder="0" allowfullscreen></iframe>
-        </div>
-		<a href="#legsPopup4" data-rel="popup" class="ui-btn ui-btn-inline ui-corner-all">Dumbbell Calf Raises</a>
-		<div data-role="popup" id="legsPopup4" class="ui-content">
-          <a href="#" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn ui-icon-delete ui-btn-icon-notext ui-btn-right">Close</a>
-          <p>Dumbbell Calf Raises</p>
-		  <iframe width="auto" height="315" src="https://www.youtube.com/embed/wxwY7GXxL4k" frameborder="0" allowfullscreen></iframe>
-        </div>
-		<a href="#legsPopup5" data-rel="popup" class="ui-btn ui-btn-inline ui-corner-all">Barbell Deadlift</a>
-		<div data-role="popup" id="legsPopup5" class="ui-content">
-          <a href="#" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn ui-icon-delete ui-btn-icon-notext ui-btn-right">Close</a>
-          <p>Barbell Deadlift</p>
-		  <iframe width="auto" height="315" src="https://www.youtube.com/embed/a5zhnubunoE" frameborder="0" allowfullscreen></iframe>
+          <a href="#bmiPage"><div class="col-md-12 squareElement" id="bmi"><h2 class="categoryName">BMI</h2></div></a>
         </div>
       </div>
     </div>
@@ -129,16 +36,159 @@
       <h1>Copyright 2017</h1>
     </div>
   </div>
+  <!--MAIN PAGE END-->
+  <!--EXERCISES PAGE START-->
+  <div data-role="page" id="exercisesPage">
+    <div data-role="header" class="header">
+      <div data-role="main" class="backButton"><a href="#pageone"><img src="img/backButton.png"></a></div>
+      <h1 class="pageName">EXERCISES</h1>
+    </div>
+    <div data-role="main" class="container-fluid ui-content">
+      <div class="row">
+        <a href="#legsPage"><div class="col-md-12 section" id="legs"><h2 class="sectionName">LEGS</h2></div></a>
+        <a href="#chestPage"><div class="col-md-12 section" id="chest"><h2 class="sectionName">CHEST</h2></div></a>
+        <a href="#backPage"><div class="col-md-12 section" id="back"><h2 class="sectionName">BACK</h2></div></a>
+        <a href="#shouldersPage"><div class="col-md-12 section" id="shoulders"><h2 class="sectionName">SHOULDERS</h2></div></a>
+        <a href="#armsPage"><div class="col-md-12 section" id="arms"><h2 class="sectionName">ARMS</h2></div></a>
+        <a href="#absPage"><div class="col-md-12 section" id="abs"><h2 class="sectionName">ABS</h2></div></a>
+      </div>
+    </div>
+
+    <div data-role="footer" class="footer">
+      <h1>Copyright 2017</h1>
+    </div>
+  </div>
+
+  <!--LEGS PAGE START-->
+  <div data-role="page" id="legsPage">
+    <div data-role="header" class="header">
+      <div data-role="main" class="backButton"><a href="#exercisesPage"><img src="img/backButton.png"></a></div>
+      <h1 class="pageName">LEGS</h1>
+    </div>
+    <div class="centering">
+      <div class="container-fluid headerImg" id="legsHeaderPhoto">
+      </div>
+      <br>
+      <h2>EXCERCISES:</h2>
+      <div data-role="main" class="ui-content">
+        <a href="#barbellSquat" class="ui-btn ui-btn-inline ui-corner-all pageName">Barbell Squat</a>
+        <a href="#dumbbellStepUps" class="ui-btn ui-btn-inline ui-corner-all pageName">Dumbbell Step Ups</a>
+        <a href="#legPress" class="ui-btn ui-btn-inline ui-corner-all">Leg Press</a>
+        <a href="#dumbbellCalfRaises" class="ui-btn ui-btn-inline ui-corner-all">Dumbbell Calf Raises</a>
+        <a href="#barbellDeadlift" class="ui-btn ui-btn-inline ui-corner-all">Barbell Deadlift</a>
+      </div>
+    </div>
+    <div data-role="footer" class="footer">
+      <h1>Copyright 2017</h1>
+    </div>
+  </div>
   <!--LEGS PAGE END-->
-  
+  <!--LEGS SUBPAGE START-->
+  <div data-role="page" id="dumbbellStepUps">
+    <div data-role="header" class="header">
+      <div data-role="main" class="backButton"><a href="#legsPage"><img src="img/backButton.png"></a></div>
+      <h1 class="pageName">Dumbbell Step Ups</h1>
+    </div>
+    <div data-role="main" class="container-fluid ui-content">
+      <div class="row">
+        <iframe width="auto" height="315" src="https://www.youtube.com/embed/7AtIjR-QqVA" frameborder="0" allowfullscreen></iframe>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+        </p>
+      </div>
+    </div>
+
+    <div data-role="footer" class="footer">
+      <h1>Copyright 2017</h1>
+    </div>
+  </div>
+
+  <div data-role="page" id="legPress">
+    <div data-role="header" class="header">
+      <div data-role="main" class="backButton"><a href="#legsPage"><img src="img/backButton.png"></a></div>
+      <h1 class="pageName">Leg Press</h1>
+    </div>
+    <div data-role="main" class="container-fluid ui-content">
+      <div class="row">
+        <iframe width="auto" height="315" src="https://www.youtube.com/embed/3R0SOJ3alTA" frameborder="0" allowfullscreen></iframe>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+        </p>
+      </div>
+    </div>
+
+    <div data-role="footer" class="footer">
+      <h1>Copyright 2017</h1>
+    </div>
+  </div>
+
+  <div data-role="page" id="barbellSquat">
+    <div data-role="header" class="header">
+      <div data-role="main" class="backButton"><a href="#legsPage"><img src="img/backButton.png"></a></div>
+      <h1 class="pageName">Barbell Squat</h1>
+    </div>
+    <div data-role="main" class="container-fluid ui-content">
+      <div class="row">
+        <iframe width="auto" height="315" src="https://www.youtube.com/embed/tVB1q8zkP3o" frameborder="0" allowfullscreen></iframe>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+        </p>
+      </div>
+    </div>
+
+    <div data-role="footer" class="footer">
+      <h1>Copyright 2017</h1>
+    </div>
+  </div>
+
+  <div data-role="page" id="dumbbellCalfRaises">
+    <div data-role="header" class="header">
+      <div data-role="main" class="backButton"><a href="#legsPage"><img src="img/backButton.png"></a></div>
+      <h1 class="pageName">Dumbbell Calf Raises</h1>
+    </div>
+    <div data-role="main" class="container-fluid ui-content">
+      <div class="row">
+        <iframe width="auto" height="315" src="https://www.youtube.com/embed/wxwY7GXxL4k" frameborder="0" allowfullscreen></iframe>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+        </p>
+      </div>
+    </div>
+
+    <div data-role="footer" class="footer">
+      <h1>Copyright 2017</h1>
+    </div>
+  </div>
+
+  <div data-role="page" id="barbellDeadlift">
+    <div data-role="header" class="header">
+      <div data-role="main" class="backButton"><a href="#legsPage"><img src="img/backButton.png"></a></div>
+      <h1 class="pageName">Barbell Deadlift</h1>
+    </div>
+    <div data-role="main" class="container-fluid ui-content">
+      <div class="row">
+        <iframe width="auto" height="315" src="https://www.youtube.com/embed/a5zhnubunoE" frameborder="0" allowfullscreen></iframe>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+        </p>
+      </div>
+    </div>
+
+    <div data-role="footer" class="footer">
+      <h1>Copyright 2017</h1>
+    </div>
+  </div>
+  <!--LEGS SUBPAGE END-->
+
   <!-- CHEST PAGE START -->
   <div data-role="page" id="chestPage">
     <div data-role="header" class="header">
-        <div data-role="main" class="backButton"><a href="#exercisesPage"><img src="img/backButton.png"></a></div>
-        <h1 class="pageName">CHEST</h1>
+      <div data-role="main" class="backButton"><a href="#exercisesPage"><img src="img/backButton.png"></a></div>
+      <h1 class="pageName">CHEST</h1>
     </div>
     <div class="centering">
-      <div class="container-fluid headerImg" id="legsHeaderPhoto"> <!-- TODO Change the header img -->
+      <div class="container-fluid headerImg" id="legsHeaderPhoto">
+        <!-- TODO Change the header img -->
       </div>
       <br>
       <h2>EXCERCISES:</h2>
@@ -147,31 +197,31 @@
         <div data-role="popup" id="chestPopup1" class="ui-content">
           <a href="#" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn ui-icon-delete ui-btn-icon-notext ui-btn-right">Close</a>
           <p>Barbell Bench Press</p>
-		  <iframe width="auto" height="315" src="https://www.youtube.com/embed/ukDEXCXJxdM" frameborder="0" allowfullscreen></iframe>
+          <iframe width="auto" height="315" src="https://www.youtube.com/embed/ukDEXCXJxdM" frameborder="0" allowfullscreen></iframe>
         </div>
-		<a href="#chestPopup2" data-rel="popup" class="ui-btn ui-btn-inline ui-corner-all">Dumbbell Bench Press</a>
-		<div data-role="popup" id="chestPopup2" class="ui-content">
+        <a href="#chestPopup2" data-rel="popup" class="ui-btn ui-btn-inline ui-corner-all">Dumbbell Bench Press</a>
+        <div data-role="popup" id="chestPopup2" class="ui-content">
           <a href="#" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn ui-icon-delete ui-btn-icon-notext ui-btn-right">Close</a>
           <p>Dumbbell Bench Press</p>
-		  <iframe width="auto" height="315" src="https://www.youtube.com/embed/Vc63DPUoA40" frameborder="0" allowfullscreen></iframe>
+          <iframe width="auto" height="315" src="https://www.youtube.com/embed/Vc63DPUoA40" frameborder="0" allowfullscreen></iframe>
         </div>
-		<a href="#chestPopup3" data-rel="popup" class="ui-btn ui-btn-inline ui-corner-all">Pushups</a>
-		<div data-role="popup" id="chestPopup3" class="ui-content">
+        <a href="#chestPopup3" data-rel="popup" class="ui-btn ui-btn-inline ui-corner-all">Pushups</a>
+        <div data-role="popup" id="chestPopup3" class="ui-content">
           <a href="#" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn ui-icon-delete ui-btn-icon-notext ui-btn-right">Close</a>
           <p>Pushups</p>
-		  <iframe width="auto" height="315" src="https://www.youtube.com/embed/XIHO5t_VBPQ" frameborder="0" allowfullscreen></iframe>
+          <iframe width="auto" height="315" src="https://www.youtube.com/embed/XIHO5t_VBPQ" frameborder="0" allowfullscreen></iframe>
         </div>
-		<a href="#chestPopup4" data-rel="popup" class="ui-btn ui-btn-inline ui-corner-all">Butterfly</a>
-		<div data-role="popup" id="chestPopup4" class="ui-content">
+        <a href="#chestPopup4" data-rel="popup" class="ui-btn ui-btn-inline ui-corner-all">Butterfly</a>
+        <div data-role="popup" id="chestPopup4" class="ui-content">
           <a href="#" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn ui-icon-delete ui-btn-icon-notext ui-btn-right">Close</a>
           <p>Butterfly</p>
-		  <iframe width="auto" height="315" src="https://www.youtube.com/embed/oGxc2ph8Fnw" frameborder="0" allowfullscreen></iframe>
+          <iframe width="auto" height="315" src="https://www.youtube.com/embed/oGxc2ph8Fnw" frameborder="0" allowfullscreen></iframe>
         </div>
-		<a href="#chestPopup5" data-rel="popup" class="ui-btn ui-btn-inline ui-corner-all">Cable Crossover</a>
-		<div data-role="popup" id="chestPopup5" class="ui-content">
+        <a href="#chestPopup5" data-rel="popup" class="ui-btn ui-btn-inline ui-corner-all">Cable Crossover</a>
+        <div data-role="popup" id="chestPopup5" class="ui-content">
           <a href="#" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn ui-icon-delete ui-btn-icon-notext ui-btn-right">Close</a>
           <p>Cable Crossover</p>
-		  <iframe width="auto" height="315" src="https://www.youtube.com/embed/aoP0s_MjN-g" frameborder="0" allowfullscreen></iframe>
+          <iframe width="auto" height="315" src="https://www.youtube.com/embed/aoP0s_MjN-g" frameborder="0" allowfullscreen></iframe>
         </div>
       </div>
     </div>
@@ -180,15 +230,15 @@
     </div>
   </div>
   <!--CHEST PAGE END-->
-  
   <!-- BACK PAGE START -->
   <div data-role="page" id="backPage">
     <div data-role="header" class="header">
-        <div data-role="main" class="backButton"><a href="#exercisesPage"><img src="img/backButton.png"></a></div>
-        <h1 class="pageName">BACK</h1>
+      <div data-role="main" class="backButton"><a href="#exercisesPage"><img src="img/backButton.png"></a></div>
+      <h1 class="pageName">BACK</h1>
     </div>
     <div class="centering">
-      <div class="container-fluid headerImg" id="legsHeaderPhoto"> <!-- TODO Change the header img -->
+      <div class="container-fluid headerImg" id="legsHeaderPhoto">
+        <!-- TODO Change the header img -->
       </div>
       <br>
       <h2>EXCERCISES:</h2>
@@ -197,31 +247,31 @@
         <div data-role="popup" id="backPopup1" class="ui-content">
           <a href="#" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn ui-icon-delete ui-btn-icon-notext ui-btn-right">Close</a>
           <p>Barbell Deadlift</p>
-		  <iframe width="auto" height="315" src="https://www.youtube.com/embed/a5zhnubunoE" frameborder="0" allowfullscreen></iframe>
+          <iframe width="auto" height="315" src="https://www.youtube.com/embed/a5zhnubunoE" frameborder="0" allowfullscreen></iframe>
         </div>
-		<a href="#backPopup2" data-rel="popup" class="ui-btn ui-btn-inline ui-corner-all">Yates Row Reverse Grip</a>
-		<div data-role="popup" id="backPopup2" class="ui-content">
+        <a href="#backPopup2" data-rel="popup" class="ui-btn ui-btn-inline ui-corner-all">Yates Row Reverse Grip</a>
+        <div data-role="popup" id="backPopup2" class="ui-content">
           <a href="#" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn ui-icon-delete ui-btn-icon-notext ui-btn-right">Close</a>
           <p>Yates Row Reverse Grip</p>
-		  <iframe width="auto" height="315" src="https://www.youtube.com/embed/0RyZHNgCiqQ" frameborder="0" allowfullscreen></iframe>
+          <iframe width="auto" height="315" src="https://www.youtube.com/embed/0RyZHNgCiqQ" frameborder="0" allowfullscreen></iframe>
         </div>
-		<a href="#backPopup3" data-rel="popup" class="ui-btn ui-btn-inline ui-corner-all">One Arm Dumbbell Row</a>
-		<div data-role="popup" id="backPopup3" class="ui-content">
+        <a href="#backPopup3" data-rel="popup" class="ui-btn ui-btn-inline ui-corner-all">One Arm Dumbbell Row</a>
+        <div data-role="popup" id="backPopup3" class="ui-content">
           <a href="#" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn ui-icon-delete ui-btn-icon-notext ui-btn-right">Close</a>
           <p>One Arm Dumbbell Row</p>
-		 <iframe width="auto" height="315" src="https://www.youtube.com/embed/PgpQ4-jHiq4" frameborder="0" allowfullscreen></iframe>
+          <iframe width="auto" height="315" src="https://www.youtube.com/embed/PgpQ4-jHiq4" frameborder="0" allowfullscreen></iframe>
         </div>
-		<a href="#backPopup4" data-rel="popup" class="ui-btn ui-btn-inline ui-corner-all">Pullups</a>
-		<div data-role="popup" id="backPopup4" class="ui-content">
+        <a href="#backPopup4" data-rel="popup" class="ui-btn ui-btn-inline ui-corner-all">Pullups</a>
+        <div data-role="popup" id="backPopup4" class="ui-content">
           <a href="#" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn ui-icon-delete ui-btn-icon-notext ui-btn-right">Close</a>
           <p>Pullups</p>
-		  <iframe width="auto" height="315" src="https://www.youtube.com/embed/WXMKjV11lAk" frameborder="0" allowfullscreen></iframe>
+          <iframe width="auto" height="315" src="https://www.youtube.com/embed/WXMKjV11lAk" frameborder="0" allowfullscreen></iframe>
         </div>
-		<a href="#backPopup5" data-rel="popup" class="ui-btn ui-btn-inline ui-corner-all">Seated Cable Rows</a>
-		<div data-role="popup" id="backPopup5" class="ui-content">
+        <a href="#backPopup5" data-rel="popup" class="ui-btn ui-btn-inline ui-corner-all">Seated Cable Rows</a>
+        <div data-role="popup" id="backPopup5" class="ui-content">
           <a href="#" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn ui-icon-delete ui-btn-icon-notext ui-btn-right">Close</a>
           <p>Seated Cable Rows</p>
-		  <iframe width="auto" height="315" src="https://www.youtube.com/embed/IzoCF_b3cIY" frameborder="0" allowfullscreen></iframe>
+          <iframe width="auto" height="315" src="https://www.youtube.com/embed/IzoCF_b3cIY" frameborder="0" allowfullscreen></iframe>
         </div>
       </div>
     </div>
@@ -230,15 +280,15 @@
     </div>
   </div>
   <!--BACK PAGE END-->
-  
-    <!-- SHOULDERS PAGE START -->
+  <!-- SHOULDERS PAGE START -->
   <div data-role="page" id="shouldersPage">
     <div data-role="header" class="header">
-        <div data-role="main" class="backButton"><a href="#exercisesPage"><img src="img/backButton.png"></a></div>
-        <h1 class="pageName">SHOULDERS</h1>
+      <div data-role="main" class="backButton"><a href="#exercisesPage"><img src="img/backButton.png"></a></div>
+      <h1 class="pageName">SHOULDERS</h1>
     </div>
     <div class="centering">
-      <div class="container-fluid headerImg" id="legsHeaderPhoto"> <!-- TODO Change the header img -->
+      <div class="container-fluid headerImg" id="legsHeaderPhoto">
+        <!-- TODO Change the header img -->
       </div>
       <br>
       <h2>EXCERCISES:</h2>
@@ -247,31 +297,31 @@
         <div data-role="popup" id="shouldersPopup1" class="ui-content">
           <a href="#" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn ui-icon-delete ui-btn-icon-notext ui-btn-right">Close</a>
           <p>Push Press</p>
-		  <iframe width="auto" height="315" src="https://www.youtube.com/embed/ChTn_TLDA5o" frameborder="0" allowfullscreen></iframe>
+          <iframe width="auto" height="315" src="https://www.youtube.com/embed/ChTn_TLDA5o" frameborder="0" allowfullscreen></iframe>
         </div>
-		<a href="#shouldersPopup2" data-rel="popup" class="ui-btn ui-btn-inline ui-corner-all">Barbell Shoulder Press</a>
-		<div data-role="popup" id="shouldersPopup2" class="ui-content">
+        <a href="#shouldersPopup2" data-rel="popup" class="ui-btn ui-btn-inline ui-corner-all">Barbell Shoulder Press</a>
+        <div data-role="popup" id="shouldersPopup2" class="ui-content">
           <a href="#" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn ui-icon-delete ui-btn-icon-notext ui-btn-right">Close</a>
           <p>Barbell Shoulder Press</p>
-		  <iframe width="560" height="315" src="https://www.youtube.com/embed/lPFwcHl0a2c" frameborder="0" allowfullscreen></iframe>
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/lPFwcHl0a2c" frameborder="0" allowfullscreen></iframe>
         </div>
-		<a href="#shouldersPopup3" data-rel="popup" class="ui-btn ui-btn-inline ui-corner-all">Barbell Rear Delt Row</a>
-		<div data-role="popup" id="shouldersPopup3" class="ui-content">
+        <a href="#shouldersPopup3" data-rel="popup" class="ui-btn ui-btn-inline ui-corner-all">Barbell Rear Delt Row</a>
+        <div data-role="popup" id="shouldersPopup3" class="ui-content">
           <a href="#" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn ui-icon-delete ui-btn-icon-notext ui-btn-right">Close</a>
           <p>Barbell Rear Delt Row</p>
-		  <iframe width="auto" height="315" src="https://www.youtube.com/embed/XagV4XfG9fo?rel=0&amp;controls=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
+          <iframe width="auto" height="315" src="https://www.youtube.com/embed/XagV4XfG9fo?rel=0&amp;controls=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
         </div>
-		<a href="#shouldersPopup4" data-rel="popup" class="ui-btn ui-btn-inline ui-corner-all">Dumbbell Shoulder Press</a>
-		<div data-role="popup" id="shouldersPopup4" class="ui-content">
+        <a href="#shouldersPopup4" data-rel="popup" class="ui-btn ui-btn-inline ui-corner-all">Dumbbell Shoulder Press</a>
+        <div data-role="popup" id="shouldersPopup4" class="ui-content">
           <a href="#" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn ui-icon-delete ui-btn-icon-notext ui-btn-right">Close</a>
           <p>Dumbbell Shoulder Press</p>
-		  <iframe width="auto" height="315" src="https://www.youtube.com/embed/tzZMsrzG_zE" frameborder="0" allowfullscreen></iframe>
+          <iframe width="auto" height="315" src="https://www.youtube.com/embed/tzZMsrzG_zE" frameborder="0" allowfullscreen></iframe>
         </div>
-		<a href="#shouldersPopup5" data-rel="popup" class="ui-btn ui-btn-inline ui-corner-all">Standing Military Press</a>
-		<div data-role="popup" id="shouldersPopup5" class="ui-content">
+        <a href="#shouldersPopup5" data-rel="popup" class="ui-btn ui-btn-inline ui-corner-all">Standing Military Press</a>
+        <div data-role="popup" id="shouldersPopup5" class="ui-content">
           <a href="#" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn ui-icon-delete ui-btn-icon-notext ui-btn-right">Close</a>
           <p>Standing Military Press</p>
-		  <iframe width="auto" height="315" src="https://www.youtube.com/embed/8E4oWpi0RkA" frameborder="0" allowfullscreen></iframe>
+          <iframe width="auto" height="315" src="https://www.youtube.com/embed/8E4oWpi0RkA" frameborder="0" allowfullscreen></iframe>
         </div>
       </div>
     </div>
@@ -280,15 +330,15 @@
     </div>
   </div>
   <!--SHOULDERS PAGE END-->
-  
   <!-- ARMS PAGE START -->
   <div data-role="page" id="armsPage">
     <div data-role="header" class="header">
-        <div data-role="main" class="backButton"><a href="#exercisesPage"><img src="img/backButton.png"></a></div>
-        <h1 class="pageName">ARMS</h1>
+      <div data-role="main" class="backButton"><a href="#exercisesPage"><img src="img/backButton.png"></a></div>
+      <h1 class="pageName">ARMS</h1>
     </div>
     <div class="centering">
-      <div class="container-fluid headerImg" id="legsHeaderPhoto"> <!-- TODO Change the header img -->
+      <div class="container-fluid headerImg" id="legsHeaderPhoto">
+        <!-- TODO Change the header img -->
       </div>
       <br>
       <h2>EXCERCISES:</h2>
@@ -297,31 +347,31 @@
         <div data-role="popup" id="armsPopup1" class="ui-content">
           <a href="#" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn ui-icon-delete ui-btn-icon-notext ui-btn-right">Close</a>
           <p>Barbell Curl - Biceps</p>
-		  <iframe width="auto" height="315" src="https://www.youtube.com/embed/dDI8ClxRS04?rel=0&amp;controls=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
+          <iframe width="auto" height="315" src="https://www.youtube.com/embed/dDI8ClxRS04?rel=0&amp;controls=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
         </div>
-		<a href="#armsPopup2" data-rel="popup" class="ui-btn ui-btn-inline ui-corner-all">Biceps Hammer Curl</a>
-		<div data-role="popup" id="armsPopup2" class="ui-content">
+        <a href="#armsPopup2" data-rel="popup" class="ui-btn ui-btn-inline ui-corner-all">Biceps Hammer Curl</a>
+        <div data-role="popup" id="armsPopup2" class="ui-content">
           <a href="#" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn ui-icon-delete ui-btn-icon-notext ui-btn-right">Close</a>
           <p>Hammer Curl - Biceps</p>
-		  <iframe width="auto" height="315" src="https://www.youtube.com/embed/0IAM2YtviQY?rel=0&amp;controls=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
+          <iframe width="auto" height="315" src="https://www.youtube.com/embed/0IAM2YtviQY?rel=0&amp;controls=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
         </div>
-		<a href="#armsPopup3" data-rel="popup" class="ui-btn ui-btn-inline ui-corner-all">Triceps Pushdown</a>
-		<div data-role="popup" id="armsPopup3" class="ui-content">
+        <a href="#armsPopup3" data-rel="popup" class="ui-btn ui-btn-inline ui-corner-all">Triceps Pushdown</a>
+        <div data-role="popup" id="armsPopup3" class="ui-content">
           <a href="#" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn ui-icon-delete ui-btn-icon-notext ui-btn-right">Close</a>
           <p>Triceps Pushdown</p>
-		  <iframe width="auto" height="315" src="https://www.youtube.com/embed/HIKzvHkibWc?rel=0&amp;controls=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
+          <iframe width="auto" height="315" src="https://www.youtube.com/embed/HIKzvHkibWc?rel=0&amp;controls=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
         </div>
-		<a href="#armsPopup4" data-rel="popup" class="ui-btn ui-btn-inline ui-corner-all">Triceps Close Grip Bench Press</a>
-		<div data-role="popup" id="armsPopup4" class="ui-content">
+        <a href="#armsPopup4" data-rel="popup" class="ui-btn ui-btn-inline ui-corner-all">Triceps Close Grip Bench Press</a>
+        <div data-role="popup" id="armsPopup4" class="ui-content">
           <a href="#" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn ui-icon-delete ui-btn-icon-notext ui-btn-right">Close</a>
           <p>Triceps Close Grip Bench Press</p>
-		  <iframe width="auto" height="315" src="https://www.youtube.com/embed/OYoc93qAAEY?rel=0&amp;controls=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
+          <iframe width="auto" height="315" src="https://www.youtube.com/embed/OYoc93qAAEY?rel=0&amp;controls=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
         </div>
-		<a href="#armsPopup5" data-rel="popup" class="ui-btn ui-btn-inline ui-corner-all">Wrist Roller</a>
-		<div data-role="popup" id="armsPopup5" class="ui-content">
+        <a href="#armsPopup5" data-rel="popup" class="ui-btn ui-btn-inline ui-corner-all">Wrist Roller</a>
+        <div data-role="popup" id="armsPopup5" class="ui-content">
           <a href="#" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn ui-icon-delete ui-btn-icon-notext ui-btn-right">Close</a>
           <p>Wrist Roller</p>
-		  <iframe width="auto" height="315" src="https://www.youtube.com/embed/-lOFG0U_rlY" frameborder="0" allowfullscreen></iframe>
+          <iframe width="auto" height="315" src="https://www.youtube.com/embed/-lOFG0U_rlY" frameborder="0" allowfullscreen></iframe>
         </div>
       </div>
     </div>
@@ -330,15 +380,15 @@
     </div>
   </div>
   <!--ARMS PAGE END-->
-  
   <!-- ABS PAGE START -->
   <div data-role="page" id="absPage">
     <div data-role="header" class="header">
-        <div data-role="main" class="backButton"><a href="#exercisesPage"><img src="img/backButton.png"></a></div>
-        <h1 class="pageName">ABS</h1>
+      <div data-role="main" class="backButton"><a href="#exercisesPage"><img src="img/backButton.png"></a></div>
+      <h1 class="pageName">ABS</h1>
     </div>
     <div class="centering">
-      <div class="container-fluid headerImg" id="legsHeaderPhoto"> <!-- TODO Change the header img -->
+      <div class="container-fluid headerImg" id="legsHeaderPhoto">
+        <!-- TODO Change the header img -->
       </div>
       <br>
       <h2>EXCERCISES:</h2>
@@ -347,31 +397,31 @@
         <div data-role="popup" id="absPopup1" class="ui-content">
           <a href="#" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn ui-icon-delete ui-btn-icon-notext ui-btn-right">Close</a>
           <p>Sit Up</p>
-		  <iframe width="auto" height="315" src="https://www.youtube.com/embed/10mp1wusuzM?rel=0&amp;controls=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
+          <iframe width="auto" height="315" src="https://www.youtube.com/embed/10mp1wusuzM?rel=0&amp;controls=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
         </div>
-		<a href="#absPopup2" data-rel="popup" class="ui-btn ui-btn-inline ui-corner-all">Jackknife Sit Up</a>
-		<div data-role="popup" id="absPopup2" class="ui-content">
+        <a href="#absPopup2" data-rel="popup" class="ui-btn ui-btn-inline ui-corner-all">Jackknife Sit Up</a>
+        <div data-role="popup" id="absPopup2" class="ui-content">
           <a href="#" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn ui-icon-delete ui-btn-icon-notext ui-btn-right">Close</a>
           <p>Jackknife Sit Up</p>
-		  <iframe width="auto" height="315" src="https://www.youtube.com/embed/GEZ8NLbtc8Q?rel=0&amp;controls=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
+          <iframe width="auto" height="315" src="https://www.youtube.com/embed/GEZ8NLbtc8Q?rel=0&amp;controls=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
         </div>
-		<a href="#absPopup3" data-rel="popup" class="ui-btn ui-btn-inline ui-corner-all">Reverse Crunch</a>
-		<div data-role="popup" id="absPopup3" class="ui-content">
+        <a href="#absPopup3" data-rel="popup" class="ui-btn ui-btn-inline ui-corner-all">Reverse Crunch</a>
+        <div data-role="popup" id="absPopup3" class="ui-content">
           <a href="#" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn ui-icon-delete ui-btn-icon-notext ui-btn-right">Close</a>
           <p>Reverse Crunch</p>
-		  <iframe width="auto" height="315" src="https://www.youtube.com/embed/lmSP-c1X_iY?rel=0&amp;controls=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
+          <iframe width="auto" height="315" src="https://www.youtube.com/embed/lmSP-c1X_iY?rel=0&amp;controls=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
         </div>
-		<a href="#absPopup4" data-rel="popup" class="ui-btn ui-btn-inline ui-corner-all">Cable Crunch</a>
-		<div data-role="popup" id="absPopup4" class="ui-content">
+        <a href="#absPopup4" data-rel="popup" class="ui-btn ui-btn-inline ui-corner-all">Cable Crunch</a>
+        <div data-role="popup" id="absPopup4" class="ui-content">
           <a href="#" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn ui-icon-delete ui-btn-icon-notext ui-btn-right">Close</a>
           <p>Cable Crunch</p>
-		  <iframe width="auto" height="315" src="https://www.youtube.com/embed/3qjoXDTuyOE?rel=0&amp;controls=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
+          <iframe width="auto" height="315" src="https://www.youtube.com/embed/3qjoXDTuyOE?rel=0&amp;controls=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
         </div>
-		<a href="#absPopup5" data-rel="popup" class="ui-btn ui-btn-inline ui-corner-all">Plank</a>
-		<div data-role="popup" id="absPopup5" class="ui-content">
+        <a href="#absPopup5" data-rel="popup" class="ui-btn ui-btn-inline ui-corner-all">Plank</a>
+        <div data-role="popup" id="absPopup5" class="ui-content">
           <a href="#" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn ui-icon-delete ui-btn-icon-notext ui-btn-right">Close</a>
           <p>Plank</p>
-		  <iframe width="auto" height="315" src="https://www.youtube.com/embed/tgbrMdfuGJA?rel=0&amp;controls=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
+          <iframe width="auto" height="315" src="https://www.youtube.com/embed/tgbrMdfuGJA?rel=0&amp;controls=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
         </div>
       </div>
     </div>
@@ -380,100 +430,93 @@
     </div>
   </div>
   <!--ABS PAGE END-->
-
   <!--EXERCISES END-->
-
   <!-- TRAINING PAGE START -->
 
-    <div data-role="page" id="trainingPage">
+  <div data-role="page" id="trainingPage">
     <div data-role="header" class="header">
-        <div data-role="main" class="backButton"><a href="#pageone"><img src="img/backButton.png"></a></div>
-        <h1 class="pageName">TRAINING</h1>
+      <div data-role="main" class="backButton"><a href="#pageone"><img src="img/backButton.png"></a></div>
+      <h1 class="pageName">TRAINING</h1>
     </div>
     <div class="centering">
       <div class="container-fluid headerImg" id="bmiPhoto"></div> <!-- TODO CHANGE IMG-->
 
       <div data-role="main" class="ui-content">
-		    <form method="post" action="/action_page_post.php">
-				  <label for="select-choice-a" class="select">Body part:</label>
-				  <select id="bodyPart" name="select-choice-a" id="select-choice-a" data-native-menu="false">
-				     <option></option>
-					 <option>LEGS</option>
-					 <option>CHEST</option>
-					 <option>BACK</option>
-					 <option>SHOULDERS</option>
-					 <option>ARMS</option>
-					 <option>ABS</option>
-				  </select>
-				  <label for="exercise">Exercise name:</label>
-				  <input id="exerciseName" type="text" name="exercise" id="exercise"> 
-				  <label for="sets">Sets:</label>
-				  <input id="setsInput" type="range" name="sets" id="sets" value="2" min="0" max="4" data-highlight="true">
-				  <label for="reps">Reps:</label>
-				  <input id="repsInput" type="range" name="reps" id="reps" value="12" min="0" max="25" data-highlight="true">
-				  <label for="weight">Weight:</label>
-				  <input id="weightInput" type="range" name="weight" id="weight" value="50" min="0" max="100" data-highlight="true">
-				  <input id="submitBtnExercise" type="button" data-inline="true" value="ADD EXERCISE">
-			</form>
+        <form method="post" action="/action_page_post.php">
+          <label for="select-choice-a" class="select">Body part:</label>
+          <select id="bodyPart" name="select-choice-a" id="select-choice-a" data-native-menu="false">
+            <option></option>
+            <option>LEGS</option>
+            <option>CHEST</option>
+            <option>BACK</option>
+            <option>SHOULDERS</option>
+            <option>ARMS</option>
+            <option>ABS</option>
+          </select>
+          <label for="exercise">Exercise name:</label>
+          <input id="exerciseName" type="text" name="exercise" id="exercise">
+          <label for="sets">Sets:</label>
+          <input id="setsInput" type="range" name="sets" id="sets" value="2" min="0" max="4" data-highlight="true">
+          <label for="reps">Reps:</label>
+          <input id="repsInput" type="range" name="reps" id="reps" value="12" min="0" max="25" data-highlight="true">
+          <label for="weight">Weight:</label>
+          <input id="weightInput" type="range" name="weight" id="weight" value="50" min="0" max="100" data-highlight="true">
+          <input id="submitBtnExercise" type="button" data-inline="true" value="ADD EXERCISE">
+        </form>
       </div>
-    <div data-role="footer" class="footer">
-      <h1>Copyright 2017</h1>
+      <div data-role="footer" class="footer">
+        <h1>Copyright 2017</h1>
+      </div>
     </div>
   </div>
-  </div>
-  
-    <!-- TRAINING PAGE END -->
-	
-	<!--STATISTICS PAGE START-->
+
+  <!-- TRAINING PAGE END -->
+  <!--STATISTICS PAGE START-->
   <div data-role="page" id="statisticsPage">
     <div data-role="header" class="header">
-        <div data-role="main" class="backButton"><a href="#pageone"><img src="img/backButton.png"></a></div>
-        <h1 class="pageName">STATISTICS</h1>
+      <div data-role="main" class="backButton"><a href="#pageone"><img src="img/backButton.png"></a></div>
+      <h1 class="pageName">STATISTICS</h1>
     </div>
     <div class="centering">
       <div class="container-fluid headerImg" id="bmiPhoto"></div>
 
       <div data-role="main" class="ui-content">
         <div class="centering">
-		<div class="container-fluid">
-			<div id="exercisesGrid"> TEST </div>
-		</div>
+          <div class="container-fluid">
+            <div id="exercisesGrid"> TEST </div>
+          </div>
         </div>
       </div>
-    <div data-role="footer" class="footer">
-      <h1>Copyright 2017</h1>
+      <div data-role="footer" class="footer">
+        <h1>Copyright 2017</h1>
+      </div>
     </div>
   </div>
-  </div>
   <!--STATISTICS PAGE END-->
-  
   <!--BMI PAGE START-->
   <div data-role="page" id="bmiPage">
     <div data-role="header" class="header">
-        <div data-role="main" class="backButton"><a href="#pageone"><img src="img/backButton.png"></a></div>
-        <h1 class="pageName">BMI</h1>
+      <div data-role="main" class="backButton"><a href="#pageone"><img src="img/backButton.png"></a></div>
+      <h1 class="pageName">BMI</h1>
     </div>
     <div class="centering">
       <div class="container-fluid headerImg" id="bmiPhoto"></div>
 
       <div data-role="main" class="ui-content">
         <form name="bmiForm">
-        <h3 class="bmiHeading">Your Weight (KG):</h3> <input type="text" name="weight" class="BMIinput" size="20"><br />
-         <h3 class="bmiHeading">Your Height (CM):</h3> <input type="text" name="height" class="BMIinput" size="20"><br />
-         <button type="button" class="BMIbutton" value="Calculate BMI" onClick="calculateBmi()">CALCULATE</button>
-        <input type="reset" class="BMIbutton" id="resetButton" value="RESET" />
-         <h3 class="bmiHeading result"><span id="bmiResult"></span></h3>
-         <h3 class="bmiHeading result" id="BMIconclusion"></h3>
-        
+          <h3 class="bmiHeading">Your Weight (KG):</h3> <input type="text" name="weight" class="BMIinput" size="20"><br />
+          <h3 class="bmiHeading">Your Height (CM):</h3> <input type="text" name="height" class="BMIinput" size="20"><br />
+          <button type="button" class="BMIbutton" value="Calculate BMI" onClick="calculateBmi()">CALCULATE</button>
+          <input type="reset" class="BMIbutton" id="resetButton" value="RESET" />
+          <h3 class="bmiHeading result"><span id="bmiResult"></span></h3>
+          <h3 class="bmiHeading result" id="BMIconclusion"></h3>
         </form>
       </div>
-    <div data-role="footer" class="footer">
-      <h1>Copyright 2017</h1>
+      <div data-role="footer" class="footer">
+        <h1>Copyright 2017</h1>
+      </div>
     </div>
   </div>
-  </div>
   <!--BMI PAGE END-->
-
-  
 </body>
 </html>
