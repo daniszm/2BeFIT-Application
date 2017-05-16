@@ -4,7 +4,7 @@
 		id          = "2BeFIT - Fitness application"
         version     = "1.0.0" >
 
-    <name>Fitness application</name>
+    <name>Fitness application 2BeFit</name>
     <description>Application for people who want to be fit.</description>
     <author href="#">
 		Danisz Mydlarz

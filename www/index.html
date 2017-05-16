@@ -72,9 +72,9 @@
       <h2>EXCERCISES:</h2>
       <div data-role="main" class="ui-content">
         <a href="#barbellSquat" class="ui-btn ui-btn-inline ui-corner-all pageName">Barbell Squat</a>
-        <a href="#dumbbellStepUps" class="ui-btn ui-btn-inline ui-corner-all pageName">Dumbbell Step Ups</a>
+        <a href="#dumbbellStepUps" class="ui-btn ui-btn-inline ui-corner-all pageName">Step Ups</a>
         <a href="#legPress" class="ui-btn ui-btn-inline ui-corner-all">Leg Press</a>
-        <a href="#dumbbellCalfRaises" class="ui-btn ui-btn-inline ui-corner-all">Dumbbell Calf Raises</a>
+        <a href="#dumbbellCalfRaises" class="ui-btn ui-btn-inline ui-corner-all">Calf Raises</a>
         <a href="#barbellDeadlift" class="ui-btn ui-btn-inline ui-corner-all">Barbell Deadlift</a>
       </div>
     </div>
@@ -87,7 +87,7 @@
   <div data-role="page" id="dumbbellStepUps">
     <div data-role="header" class="header">
       <div data-role="main" class="backButton"><a href="#legsPage"><img src="img/backButton.png"></a></div>
-      <h1 class="pageName">Dumbbell Step Ups</h1>
+      <h1 class="pageName">Step Ups</h1>
     </div>
     <div data-role="main" class="container-fluid ui-content">
       <div class="row">
@@ -144,7 +144,7 @@
   <div data-role="page" id="dumbbellCalfRaises">
     <div data-role="header" class="header">
       <div data-role="main" class="backButton"><a href="#legsPage"><img src="img/backButton.png"></a></div>
-      <h1 class="pageName">Dumbbell Calf Raises</h1>
+      <h1 class="pageName">Calf Raises</h1>
     </div>
     <div data-role="main" class="container-fluid ui-content">
       <div class="row">
@@ -179,7 +179,6 @@
     </div>
   </div>
   <!--LEGS SUBPAGE END-->
-
   <!-- CHEST PAGE START -->
   <div data-role="page" id="chestPage">
     <div data-role="header" class="header">
@@ -454,7 +453,7 @@
             <option>ABS</option>
           </select>
           <label for="exercise">Exercise name:</label>
-          <input id="exerciseName" type="text" name="exercise" id="exercise">
+          <input id="exerciseName" type="text" name="exercise" id="exercise" maxlength="12">
           <label for="sets">Sets:</label>
           <input id="setsInput" type="range" name="sets" id="sets" value="2" min="0" max="4" data-highlight="true">
           <label for="reps">Reps:</label>
