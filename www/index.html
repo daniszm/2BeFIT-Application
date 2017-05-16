@@ -8,6 +8,8 @@
   <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
   <script src="js/main.js"></script>
   <script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+  <script src="https://maps.googleapis.com/maps/api/js?sensor=false" type="text/javascript"></script>
+  <script src="/assets/gmap3.js?body=1" type="text/javascript"></script>
   <!-- Latest compiled and minified CSS -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 </head>
@@ -27,7 +29,7 @@
           <a href="#trainingPage"><div class="col-md-12 squareElement" id="training"><h2 class="categoryName">TRAINING</h2></div></a>
           <a href="#statisticsPage" onclick="getExercises()"><div class="col-md-12 squareElement" id="statistics"><h2 class="categoryName">STATISTICS</h2></div></a>
           <a href="#exercisesPage"><div class="col-md-12 squareElement" id="exercises"><h2 class="categoryName">EXERCISES</h2></div></a>
-          <div class="col-md-12 squareElement" id="gymMap"><h2 class="categoryName">GYM MAP</h2></div>
+          <a href="#map-page"><div class="col-md-12 squareElement" id="gymMap"><h2 class="categoryName">GYM MAP</h2></div></a>
           <a href="#bmiPage"><div class="col-md-12 squareElement" id="bmi"><h2 class="categoryName">BMI</h2></div></a>
         </div>
       </div>
@@ -517,5 +519,32 @@
     </div>
   </div>
   <!--BMI PAGE END-->
+  <!--MAP PAGE START-->
+  <div data-role="page" id="map-page" data-url="map-page">
+    <div data-role="header" class="header">
+      <div data-role="main" class="backButton"><a href="#pageone"><img src="img/backButton.png"></a></div>
+      <h1 class="pageName">MAP</h1>
+    </div>
+
+    <!--<div role="main" class="ui-content" id="mapaTEST">
+      <iframe src="https://www.google.com/maps/d/embed?mid=1vZletOpiQODWjmiGL32wmQHkmSI" width="100%" height="400px"></iframe>
+    </div>-->
+    
+    <div role="main" class="ui-content" id="map-canvas">
+      <!-- map loads here... -->
+   </div>
+
+    <div data-role="footer" class="footer">
+      <h1>Copyright 2017</h1>
+    </div>
+  </div>
+  <!--BMI PAGE END-->
+  <!--<div data-role="page" id="map-page" data-url="map-page">
+    <div data-role="header" data-theme="a">
+      <h1>Maps</h1>
+    </div>
+
+  </div>-->
+
 </body>
 </html>
