@@ -1,20 +1,16 @@
-<?xml version="1.0" encoding="UTF-8" ?>
-    <widget xmlns   = "http://www.w3.org/ns/widgets"
-        xmlns:gap   = "http://phonegap.com/ns/1.0"
-		id          = "BeFITDaniszMichal"
-        version     = "1.0.0" >
-
+<?xml version='1.0' encoding='utf-8'?>
+<widget id="BeFITDaniszMichal" version="1.0.0" xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0">
     <name>Fitness application 2BeFit v.1</name>
     <description>Application for people who want to be fit.</description>
     <author href="#">
 		Danisz Mydlarz
 	</author>
-	<author href="#">
+    <author href="#">
 		Michal Krysta
 	</author>
-	<platform name="android" />
-	
-	<plugin name="cordova-plugin-device" spec="~1.1.4" />
-	<plugin name="cordova-plugin-dialogs" spec="~1.3.1" />
-
+	<access origin="*" />
+    <platform name="android" />
+    <plugin name="cordova-plugin-device" spec="~1.1.4" />
+    <plugin name="cordova-plugin-dialogs" spec="~1.3.1" />
+    <plugin name="cordova-plugin-network-information" spec="~1.3.3" />
 </widget>
