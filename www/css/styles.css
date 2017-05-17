@@ -1,6 +1,7 @@
 * {
     font-family: 'Titillium Web', sans-serif;
     box-sizing: border-box;
+    
 }
 
 .header {
@@ -37,7 +38,7 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
 }
 
 .pageName {
-    font-size: 35px !important;
+    font-size: 33px !important;
     font-weight: bold;
     margin: 0 !important;
     color: #000 !important;
