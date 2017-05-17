@@ -75,9 +75,8 @@
       <div data-role="main" class="ui-content">
         <a href="#barbellSquat" class="ui-btn ui-btn-inline ui-corner-all pageName">Barbell Squat</a>
         <a href="#dumbbellStepUps" class="ui-btn ui-btn-inline ui-corner-all pageName">Step Ups</a>
-        <a href="#legPress" class="ui-btn ui-btn-inline ui-corner-all">Leg Press</a>
-        <a href="#dumbbellCalfRaises" class="ui-btn ui-btn-inline ui-corner-all">Calf Raises</a>
-        <a href="#barbellDeadlift" class="ui-btn ui-btn-inline ui-corner-all">Barbell Deadlift</a>
+        <a href="#legPress" class="ui-btn ui-btn-inline ui-corner-all pageName">Leg Press</a>
+        <a href="#barbellDeadlift" class="ui-btn ui-btn-inline ui-corner-all pageName">Barbell Deadlift</a>
       </div>
     </div>
     <div data-role="footer" class="footer">
@@ -143,23 +142,9 @@
     </div>
   </div>
 
-  <div data-role="page" id="dumbbellCalfRaises">
-    <div data-role="header" class="header">
-      <div data-role="main" class="backButton"><a href="#legsPage"><img src="img/backButton.png"></a></div>
-      <h1 class="pageName">Calf Raises</h1>
-    </div>
-    <div data-role="main" class="container-fluid ui-content">
-      <div class="row">
-        <iframe width="auto" height="315" src="https://www.youtube.com/embed/wxwY7GXxL4k" frameborder="0" allowfullscreen></iframe>
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-        </p>
-      </div>
-    </div>
-
-    <div data-role="footer" class="footer">
-      <h1>Copyright 2017</h1>
-    </div>
+  <div data-role="footer" class="footer">
+    <h1>Copyright 2017</h1>
+  </div>
   </div>
 
   <div data-role="page" id="barbellDeadlift">
@@ -194,35 +179,14 @@
       <br>
       <h2>EXCERCISES:</h2>
       <div data-role="main" class="ui-content">
-        <a href="#chestPopup1" data-rel="popup" class="ui-btn ui-btn-inline ui-corner-all">Barbell Bench Press</a>
-        <div data-role="popup" id="chestPopup1" class="ui-content">
-          <a href="#" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn ui-icon-delete ui-btn-icon-notext ui-btn-right">Close</a>
-          <p>Barbell Bench Press</p>
-          <iframe width="auto" height="315" src="https://www.youtube.com/embed/ukDEXCXJxdM" frameborder="0" allowfullscreen></iframe>
-        </div>
-        <a href="#chestPopup2" data-rel="popup" class="ui-btn ui-btn-inline ui-corner-all">Dumbbell Bench Press</a>
-        <div data-role="popup" id="chestPopup2" class="ui-content">
-          <a href="#" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn ui-icon-delete ui-btn-icon-notext ui-btn-right">Close</a>
-          <p>Dumbbell Bench Press</p>
-          <iframe width="auto" height="315" src="https://www.youtube.com/embed/Vc63DPUoA40" frameborder="0" allowfullscreen></iframe>
-        </div>
-        <a href="#chestPopup3" data-rel="popup" class="ui-btn ui-btn-inline ui-corner-all">Pushups</a>
-        <div data-role="popup" id="chestPopup3" class="ui-content">
-          <a href="#" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn ui-icon-delete ui-btn-icon-notext ui-btn-right">Close</a>
-          <p>Pushups</p>
-          <iframe width="auto" height="315" src="https://www.youtube.com/embed/XIHO5t_VBPQ" frameborder="0" allowfullscreen></iframe>
-        </div>
-        <a href="#chestPopup4" data-rel="popup" class="ui-btn ui-btn-inline ui-corner-all">Butterfly</a>
-        <div data-role="popup" id="chestPopup4" class="ui-content">
-          <a href="#" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn ui-icon-delete ui-btn-icon-notext ui-btn-right">Close</a>
-          <p>Butterfly</p>
-          <iframe width="auto" height="315" src="https://www.youtube.com/embed/oGxc2ph8Fnw" frameborder="0" allowfullscreen></iframe>
-        </div>
-        <a href="#chestPopup5" data-rel="popup" class="ui-btn ui-btn-inline ui-corner-all">Cable Crossover</a>
+        <a href="#barbellBenchPress"  class="ui-btn ui-btn-inline ui-corner-all pageName">BB Bench Press</a>
+        <a href="#dumbbellBenchPress" class="ui-btn ui-btn-inline ui-corner-all pageName">DB Bench Press</a>
+        <a href="#pushups" class="ui-btn ui-btn-inline ui-corner-all pageName">Pushups</a>
+        <a href="#cableCrossover" class="ui-btn ui-btn-inline ui-corner-all pageName">Cable Crossover</a>
         <div data-role="popup" id="chestPopup5" class="ui-content">
           <a href="#" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn ui-icon-delete ui-btn-icon-notext ui-btn-right">Close</a>
           <p>Cable Crossover</p>
-          <iframe width="auto" height="315" src="https://www.youtube.com/embed/aoP0s_MjN-g" frameborder="0" allowfullscreen></iframe>
+
         </div>
       </div>
     </div>
@@ -231,6 +195,86 @@
     </div>
   </div>
   <!--CHEST PAGE END-->
+  <!--CHEST SUBPAGE START-->
+  <div data-role="page" id="barbellBenchPress">
+    <div data-role="header" class="header">
+      <div data-role="main" class="backButton"><a href="#chestPage"><img src="img/backButton.png"></a></div>
+      <h1 class="pageName">BB Bench Press</h1>
+    </div>
+    <div data-role="main" class="container-fluid ui-content">
+      <div class="row">
+        <iframe width="auto" height="315" src="https://www.youtube.com/embed/ukDEXCXJxdM" frameborder="0" allowfullscreen></iframe>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+        </p>
+      </div>
+    </div>
+
+    <div data-role="footer" class="footer">
+      <h1>Copyright 2017</h1>
+    </div>
+  </div>
+
+  <div data-role="page" id="dumbbellBenchPress">
+    <div data-role="header" class="header">
+      <div data-role="main" class="backButton"><a href="#chestPage"><img src="img/backButton.png"></a></div>
+      <h1 class="pageName">DB Bench Press</h1>
+    </div>
+    <div data-role="main" class="container-fluid ui-content">
+      <div class="row">
+        <iframe width="auto" height="315" src="https://www.youtube.com/embed/ukDEXCXJxdM" frameborder="0" allowfullscreen></iframe>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+        </p>
+      </div>
+    </div>
+
+    <div data-role="footer" class="footer">
+      <h1>Copyright 2017</h1>
+    </div>
+  </div>
+
+  <div data-role="page" id="pushups">
+    <div data-role="header" class="header">
+      <div data-role="main" class="backButton"><a href="#chestPage"><img src="img/backButton.png"></a></div>
+      <h1 class="pageName">Pushups</h1>
+    </div>
+    <div data-role="main" class="container-fluid ui-content">
+      <div class="row">
+        <iframe width="auto" height="315" src="https://www.youtube.com/embed/XIHO5t_VBPQ" frameborder="0" allowfullscreen></iframe>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+        </p>
+      </div>
+    </div>
+
+    <div data-role="footer" class="footer">
+      <h1>Copyright 2017</h1>
+    </div>
+  </div>
+
+
+  <div data-role="page" id="cableCrossover">
+    <div data-role="header" class="header">
+      <div data-role="main" class="backButton"><a href="#chestPage"><img src="img/backButton.png"></a></div>
+      <h1 class="pageName">Cable Crossover</h1>
+    </div>
+    <div data-role="main" class="container-fluid ui-content">
+      <div class="row">
+        <iframe width="auto" height="315" src="https://www.youtube.com/embed/aoP0s_MjN-g" frameborder="0" allowfullscreen></iframe>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+        </p>
+      </div>
+    </div>
+
+    <div data-role="footer" class="footer">
+      <h1>Copyright 2017</h1>
+    </div>
+  </div>
+
+
+  <!--CHEST SUBPAGE END-->
   <!-- BACK PAGE START -->
   <div data-role="page" id="backPage">
     <div data-role="header" class="header">
@@ -244,36 +288,11 @@
       <br>
       <h2>EXCERCISES:</h2>
       <div data-role="main" class="ui-content">
-        <a href="#backPopup1" data-rel="popup" class="ui-btn ui-btn-inline ui-corner-all">Barbell Deadlift</a>
-        <div data-role="popup" id="backPopup1" class="ui-content">
-          <a href="#" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn ui-icon-delete ui-btn-icon-notext ui-btn-right">Close</a>
-          <p>Barbell Deadlift</p>
-          <iframe width="auto" height="315" src="https://www.youtube.com/embed/a5zhnubunoE" frameborder="0" allowfullscreen></iframe>
-        </div>
-        <a href="#backPopup2" data-rel="popup" class="ui-btn ui-btn-inline ui-corner-all">Yates Row Reverse Grip</a>
-        <div data-role="popup" id="backPopup2" class="ui-content">
-          <a href="#" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn ui-icon-delete ui-btn-icon-notext ui-btn-right">Close</a>
-          <p>Yates Row Reverse Grip</p>
-          <iframe width="auto" height="315" src="https://www.youtube.com/embed/0RyZHNgCiqQ" frameborder="0" allowfullscreen></iframe>
-        </div>
-        <a href="#backPopup3" data-rel="popup" class="ui-btn ui-btn-inline ui-corner-all">One Arm Dumbbell Row</a>
-        <div data-role="popup" id="backPopup3" class="ui-content">
-          <a href="#" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn ui-icon-delete ui-btn-icon-notext ui-btn-right">Close</a>
-          <p>One Arm Dumbbell Row</p>
-          <iframe width="auto" height="315" src="https://www.youtube.com/embed/PgpQ4-jHiq4" frameborder="0" allowfullscreen></iframe>
-        </div>
-        <a href="#backPopup4" data-rel="popup" class="ui-btn ui-btn-inline ui-corner-all">Pullups</a>
-        <div data-role="popup" id="backPopup4" class="ui-content">
-          <a href="#" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn ui-icon-delete ui-btn-icon-notext ui-btn-right">Close</a>
-          <p>Pullups</p>
-          <iframe width="auto" height="315" src="https://www.youtube.com/embed/WXMKjV11lAk" frameborder="0" allowfullscreen></iframe>
-        </div>
-        <a href="#backPopup5" data-rel="popup" class="ui-btn ui-btn-inline ui-corner-all">Seated Cable Rows</a>
-        <div data-role="popup" id="backPopup5" class="ui-content">
-          <a href="#" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn ui-icon-delete ui-btn-icon-notext ui-btn-right">Close</a>
-          <p>Seated Cable Rows</p>
-          <iframe width="auto" height="315" src="https://www.youtube.com/embed/IzoCF_b3cIY" frameborder="0" allowfullscreen></iframe>
-        </div>
+        <a href="#barbellDeadlift" class="ui-btn ui-btn-inline ui-corner-all pageName">Barbell Deadlift</a>
+        <a href="#reverseGrip" class="ui-btn ui-btn-inline ui-corner-all pageName">Reverse Grip</a>
+        <a href="#pullups" class="ui-btn ui-btn-inline ui-corner-all pageName">Pullups</a>
+        <a href="#cableRows" class="ui-btn ui-btn-inline ui-corner-all pageName">Cable Rows</a>
+
       </div>
     </div>
     <div data-role="footer" class="footer">
@@ -281,6 +300,93 @@
     </div>
   </div>
   <!--BACK PAGE END-->
+  <!-- BACK SUBPAGE START -->
+  <div data-role="page" id="barbellDeadlift">
+    <div data-role="header" class="header">
+      <div data-role="main" class="backButton"><a href="#backPage"><img src="img/backButton.png"></a></div>
+      <h1 class="pageName">Barbell Deadlift</h1>
+    </div>
+    <div data-role="main" class="container-fluid ui-content">
+      <div class="row">
+        <iframe width="auto" height="315" src="https://www.youtube.com/embed/a5zhnubunoE" frameborder="0" allowfullscreen></iframe>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+        </p>
+      </div>
+    </div>
+
+    <div data-role="footer" class="footer">
+      <h1>Copyright 2017</h1>
+    </div>
+  </div>
+
+
+
+
+
+  <div data-role="page" id="reverseGrip">
+    <div data-role="header" class="header">
+      <div data-role="main" class="backButton"><a href="#backPage"><img src="img/backButton.png"></a></div>
+      <h1 class="pageName">Reverse Grip</h1>
+    </div>
+    <div data-role="main" class="container-fluid ui-content">
+      <div class="row">
+        <iframe width="auto" height="315" src="https://www.youtube.com/embed/0RyZHNgCiqQ" frameborder="0" allowfullscreen></iframe>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+        </p>
+      </div>
+    </div>
+
+    <div data-role="footer" class="footer">
+      <h1>Copyright 2017</h1>
+    </div>
+  </div>
+
+
+
+  <div data-role="page" id="pullups">
+    <div data-role="header" class="header">
+      <div data-role="main" class="backButton"><a href="#backPage"><img src="img/backButton.png"></a></div>
+      <h1 class="pageName">Pullups</h1>
+    </div>
+    <div data-role="main" class="container-fluid ui-content">
+      <div class="row">
+        <iframe width="auto" height="315" src="https://www.youtube.com/embed/0RyZHNgCiqQ" frameborder="0" allowfullscreen></iframe>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+        </p>
+      </div>
+    </div>
+
+    <div data-role="footer" class="footer">
+      <h1>Copyright 2017</h1>
+    </div>
+  </div>
+
+
+
+  <div data-role="page" id="cableRows">
+    <div data-role="header" class="header">
+      <div data-role="main" class="backButton"><a href="#backPage"><img src="img/backButton.png"></a></div>
+      <h1 class="pageName">Cable Rows</h1>
+    </div>
+    <div data-role="main" class="container-fluid ui-content">
+      <div class="row">
+        <iframe width="auto" height="315" src="https://www.youtube.com/embed/IzoCF_b3cIY" frameborder="0" allowfullscreen></iframe>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+        </p>
+      </div>
+    </div>
+
+    <div data-role="footer" class="footer">
+      <h1>Copyright 2017</h1>
+    </div>
+  </div>
+
+
+  <!-- BACK SUBPAGE START -->
   <!-- SHOULDERS PAGE START -->
   <div data-role="page" id="shouldersPage">
     <div data-role="header" class="header">
@@ -482,7 +588,7 @@
       <div class="container-fluid headerImg" id="statisticsPhoto"></div>
 
       <div data-role="main" class="ui-content">
-            <div id="exercisesGrid" class="container-fluid"><p class="loadingText">LOADING STATISTICS...</p></div>
+        <div id="exercisesGrid" class="container-fluid"><p class="loadingText">LOADING STATISTICS...</p></div>
       </div>
       <div data-role="footer" class="footer">
         <h1>Copyright 2017</h1>
@@ -525,10 +631,10 @@
     <!--<div role="main" class="ui-content" id="mapaTEST">
       <iframe src="https://www.google.com/maps/d/embed?mid=1vZletOpiQODWjmiGL32wmQHkmSI" width="100%" height="400px"></iframe>
     </div>-->
-    
+
     <div role="main" class="ui-content" id="map-canvas">
       <!-- map loads here... -->
-   </div>
+    </div>
 
     <div data-role="footer" class="footer">
       <h1>Copyright 2017</h1>
