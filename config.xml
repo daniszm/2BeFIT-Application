@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" ?>
     <widget xmlns   = "http://www.w3.org/ns/widgets"
         xmlns:gap   = "http://phonegap.com/ns/1.0"
-		id          = "2BeFIT"
+		id          = "2BeFITDaniszMichal"
         version     = "1.0.0" >
 
     <name>Fitness application 2BeFit v.1</name>
