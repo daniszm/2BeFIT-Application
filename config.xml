@@ -18,6 +18,4 @@
     <plugin name="cordova-plugin-network-information" spec="~1.3.3" />
     <plugin name="cordova-plugin-whitelist" spec="~1.3.2" />
     <plugin name="cordova-plugin-geolocation" spec="~2.4.3" />
-        <variable name="API_KEY_FOR_ANDROID" value="AIzaSyBcdvlF15wQVdXv5k6sh96Kfxz5PjPhU3Y" />
-    </plugin>
 </widget>
