@@ -145,6 +145,15 @@ $(document).ready(function () {
   });
 });
 
+$.ajax({
+   url:'controller/action',
+   success: function() {
+    alert("result");
+   },error: function () {
+          alert("err");
+    }
+});
+
 function getExercises() {
   $.ajax({
     url: "https://api.mlab.com/api/1/databases/fitappdb/collections/exercises?apiKey=p5W6JyOLc6_yXmLzinofkvztB0Yu7rYJ",
