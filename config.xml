@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8" ?>
     <widget xmlns   = "http://www.w3.org/ns/widgets"
         xmlns:gap   = "http://phonegap.com/ns/1.0"
-		id          = "2BeFIT - Fitness application"
+		id          = "2BeFIT - Fitness application v.1"
         version     = "1.0.0" >
 
-    <name>Fitness application 2BeFit</name>
+    <name>Fitness application 2BeFit v.1</name>
     <description>Application for people who want to be fit.</description>
     <author href="#">
 		Danisz Mydlarz
