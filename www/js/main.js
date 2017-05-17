@@ -138,7 +138,7 @@ $(document).ready(function () {
           localStorage.setItem('avc', JSON.stringify(bodyPart));
         },
         error: function (xhr, status, err) {
-          console.log("err");
+          console.log(err);
         }
       });
     }
