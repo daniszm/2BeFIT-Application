@@ -104,7 +104,7 @@ $(document).on("pageinit", "#map-page", function () {
 });
 
 $(document).ready(function () {
-  
+
 
   $('#submitBtnExercise').on('click', function (e) {
     e.preventDefault();
@@ -115,28 +115,33 @@ $(document).ready(function () {
     var reps = $("#repsInput").val();
     var weight = $("#weightInput").val();
     var time = getTime();
-    $.ajax({
-      url: "https://api.mlab.com/api/1/databases/fitappdb/collections/exercises?apiKey=p5W6JyOLc6_yXmLzinofkvztB0Yu7rYJ",
-      data: JSON.stringify({
-        user: user,
-        bodyPart: bodyPart,
-        name: name,
-        sets: sets,
-        reps: reps,
-        weight: weight,
-        time: time
-      }),
-      type: "POST",
-      contentType: "application/json",
-      success: function (data) {
-        console.log("body part: " + bodyPart);
-        alert("EXERCISE ADDED :)");
-        localStorage.setItem('avc', JSON.stringify(bodyPart));
-      },
-      error: function (xhr, status, err) {
-        console.log(err);
-      }
-    });
+
+    if (bodyPart == "" || name == "") {
+      alert("Please select body part or insert exercise name!");
+    } else {
+      $.ajax({
+        url: "https://api.mlab.com/api/1/databases/fitappdb/collections/exercises?apiKey=p5W6JyOLc6_yXmLzinofkvztB0Yu7rYJ",
+        data: JSON.stringify({
+          user: user,
+          bodyPart: bodyPart,
+          name: name,
+          sets: sets,
+          reps: reps,
+          weight: weight,
+          time: time
+        }),
+        type: "POST",
+        contentType: "application/json",
+        success: function (data) {
+          console.log("body part: " + bodyPart);
+          alert("EXERCISE ADDED :)");
+          localStorage.setItem('avc', JSON.stringify(bodyPart));
+        },
+        error: function (xhr, status, err) {
+          console.log(err);
+        }
+      });
+    }
   });
 });
 
