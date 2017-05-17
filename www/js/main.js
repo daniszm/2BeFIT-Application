@@ -138,20 +138,11 @@ $(document).ready(function () {
           localStorage.setItem('avc', JSON.stringify(bodyPart));
         },
         error: function (xhr, status, err) {
-          alert("err");
+          console.log("err");
         }
       });
     }
   });
-});
-
-$.ajax({
-   url:'controller/action',
-   success: function() {
-    alert("result");
-   },error: function () {
-          alert("err");
-    }
 });
 
 function getExercises() {
