@@ -65,7 +65,7 @@ function getTime() {
  * Geolocation documentation: http://dev.w3.org/geo/api/spec-source.html
  */
 $(document).on("pageinit", "#map-page", function () {
-  var defaultLatLng = new google.maps.LatLng(34.0983425, -118.3267434);  // Default to Hollywood, CA when no geolocation support
+  var defaultLatLng = new google.maps.LatLng(50.061761, 19.938164);
   if (navigator.geolocation) {
     function success(pos) {
       // Location found, show map with these coordinates
@@ -97,7 +97,84 @@ $(document).on("pageinit", "#map-page", function () {
     var marker1 = new google.maps.Marker({
       position: new google.maps.LatLng(50.07128, 19.93696),
       map: map,
-      title: "Platinium Fitness!",
+      title: "Platinium Fitness",
+      icon: 'img/hantel.png'
+    });
+
+    var marker2 = new google.maps.Marker({
+      position: new google.maps.LatLng(50.073151, 19.893451),
+      map: map,
+      title: "Platinium Fitness - Juliusza Lea 213",
+      icon: 'img/hantel.png'
+    });
+
+    var marker3 = new google.maps.Marker({
+      position: new google.maps.LatLng(50.079416, 19.894164),
+      map: map,
+      title: "Platinium Fitness - Stańczyka 3",
+      icon: 'img/hantel.png'
+    });
+
+    var marker4 = new google.maps.Marker({
+      position: new google.maps.LatLng(50.091425, 19.908654),
+      map: map,
+      title: "Platinium Fitness - Stawowa 61",
+      icon: 'img/hantel.png'
+    });
+
+    var marker5 = new google.maps.Marker({
+      position: new google.maps.LatLng(50.083864, 19.936336),
+      map: map,
+      title: "Platinium Fitness - Bratysławska 4",
+      icon: 'img/hantel.png'
+    });
+
+    var marker6 = new google.maps.Marker({
+      position: new google.maps.LatLng(50.071024, 19.936336),
+      map: map,
+      title: "Platinium Fitness - Długa 63",
+      icon: 'img/hantel.png'
+    });
+
+    var marker7 = new google.maps.Marker({
+      position: new google.maps.LatLng(50.067681, 19.945654),
+      map: map,
+      title: "Platinium Fitness - Pawia 22",
+      icon: 'img/hantel.png'
+    });
+
+    var marker8 = new google.maps.Marker({
+      position: new google.maps.LatLng(50.033012, 19.946477),
+      map: map,
+      title: "Platinium Fitness - Wadowicka 6D",
+      icon: 'img/hantel.png'
+    });
+
+    var marker9 = new google.maps.Marker({
+      position: new google.maps.LatLng(50.015763, 19.942459),
+      map: map,
+      title: "Platinium Fitness - Zakopiańska 62B",
+      icon: 'img/hantel.png'
+    });
+
+    var marker10 = new google.maps.Marker({
+      position: new google.maps.LatLng(50.014423, 19.921860),
+      map: map,
+      title: "Platinium Fitness - Zakopiańska 105",
+      icon: 'img/hantel.png'
+    });
+
+    var marker11 = new google.maps.Marker({
+      position: new google.maps.LatLng(50.069546, 19.969925),
+      map: map,
+      title: "Platinium Fitness - Mogilska 97",
+      icon: 'img/hantel.png'
+    });
+
+    var marker12 = new google.maps.Marker({
+      position: new google.maps.LatLng(50.065139, 19.996361),
+      map: map,
+      title: "Platinium Fitness - Galeria Plaza",
       icon: 'img/hantel.png'
     });
   }

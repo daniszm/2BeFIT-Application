@@ -207,6 +207,27 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
     width: 100%; /* Full width */
 }
 
+.excerciseGuide {
+    font-size: 27px;
+    font-weight: bold;
+    padding-left: 20px;
+}
+
+.description {
+    padding-right: 20px;
+    font-size: 22px;
+    text-align: justify;
+}
+
+.description ol li{
+    padding-top: 20px;
+}
+
+iframe {
+    display:block;
+    margin: 0 auto;
+}
+
 @media screen and (max-width: 400px) {
     .statisticsTable {
         margin-left: -20px;
