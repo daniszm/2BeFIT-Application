@@ -19,6 +19,7 @@
     <plugin name="cordova-plugin-geolocation" spec="~2.4.3" />
     <plugin spec="https://github.com/apache/cordova-plugin-splashscreen.git" source="git"/>
     <platform name="android">
+        <splash src="res/splash-port-xhdpi.png" />
         <icon src="res/icon.png" />
     </platform>
 </widget>
