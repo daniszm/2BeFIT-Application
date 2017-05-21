@@ -958,12 +958,13 @@
 
       <div data-role="main" class="ui-content">
         <form name="bmiForm">
-          <h3 class="bmiHeading">Your Weight (KG):</h3> <input type="text" name="weight" class="BMIinput" size="20"><br />
-          <h3 class="bmiHeading">Your Height (CM):</h3> <input type="text" name="height" class="BMIinput" size="20"><br />
+          <h3 class="bmiHeading">Your Weight (KG):</h3> <input type="text" name="weight" id="weightInput2" class="BMIinput" size="20"><br />
+          <h3 class="bmiHeading">Your Height (CM):</h3> <input type="text" name="height" id="heightInput" class="BMIinput" size="20"><br />
           <button type="button" class="BMIbutton" value="Calculate BMI" onClick="calculateBmi()">CALCULATE</button>
           <input type="reset" class="BMIbutton" id="resetButton" value="RESET" />
           <h3 class="bmiHeading result"><span id="bmiResult"></span></h3>
           <h3 class="bmiHeading result" id="BMIconclusion"></h3>
+          <h3 class="bmiLastResult"></h3>
         </form>
       </div>
       <div data-role="footer" class="footer">

@@ -147,7 +147,7 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
 }
 
 .bmiHeading.result{
-    padding: 10px 0 20px 0;
+    padding: 10px 0 5px 0;
     }
 
 .BMIbutton {
@@ -226,6 +226,17 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
 iframe {
     display:block;
     margin: 0 auto;
+}
+
+hr {
+    border-top: 3px double #000;
+}
+
+.bmiLastResult {
+    padding: 10px 10px 20px 10px;
+    font-size: 30px;
+    text-transform: uppercase;
+    font-weight: bold;
 }
 
 @media screen and (max-width: 400px) {

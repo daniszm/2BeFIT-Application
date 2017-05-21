@@ -25,6 +25,9 @@
       BMIconclusion.textContent = "You have overweight."
     }
     localStorage.setItem("BMI", "Your last BMI is " + finalBmi);
+    var lastBMIresult = localStorage.getItem("BMI");
+    // alert(lastBMIresult);
+    $(".bmiLastResult").text(lastBMIresult);
   }
   else {
        alert("PLEASE FILL DATA CORRECTLY")
@@ -48,27 +51,6 @@ function getTime() {
 
   return newdate = day + "." + month + "<br>" + year;
 }
-
-
-// function addExerciseToLocalStorage(){
-// var exercise = {
-// 'bodyPart' : $( "#bodyPart" ).val(),
-// 'name' : $( "#exerciseName" ).val(),
-// 'sets' : $( "#setsInput" ).val(),
-// 'reps' : $( "#repsInput" ).val(),
-// 'weight' : $( "#weightInput" ).val()
-// }
-
-// var objectString = JSON.stringify(exercise);
-
-// var oldItems = JSON.parse(localStorage.getItem('itemsArray')) || [];
-
-// oldItems.push(objectString);
-
-// localStorage.setItem('itemsArray', JSON.stringify(oldItems));
-
-// alert(objectString);
-// }
 
 /*
  * Google Maps documentation: http://code.google.com/apis/maps/documentation/javascript/basics.html
@@ -192,6 +174,13 @@ $(document).on("pageinit", "#map-page", function () {
 
 $(document).ready(function () {
 
+  $("#bmi").on("click", function() {
+    
+    document.getElementById("heightInput").value = "";
+    document.getElementById("weightInput2").value = "";
+    $("#bmiResult").text("");
+    $("#BMIconclusion").text("");
+  });
 
   $('#submitBtnExercise').on('click', function (e) {
     e.preventDefault();
@@ -220,9 +209,7 @@ $(document).ready(function () {
         type: "POST",
         contentType: "application/json",
         success: function (data) {
-          console.log("body part: " + bodyPart);
           alert("EXERCISE ADDED :)");
-          localStorage.setItem('avc', JSON.stringify(bodyPart));
         },
         error: function (xhr, status, err) {
           console.log(err);
