@@ -24,10 +24,20 @@ function calculateBmi() {
     if (finalBmi > 25) {
       BMIconclusion.textContent = "You have overweight."
     }
+    localStorage.setItem("BMI", "At " +  getTimeBMI() + " " + BMIconclusion.textContent);
   }
   else {
-    alert("PLEASE FILL DATA CORRECTLY")
+       alert("PLEASE FILL DATA CORRECTLY")
   }
+}
+
+function getTimeBMI() {
+  var dateObj = new Date();
+  var month = dateObj.getUTCMonth() + 1; //months from 1-12
+  var day = dateObj.getUTCDate();
+  var year = dateObj.getUTCFullYear();
+
+  return newdate = day + "." + month + year;
 }
 
 function getTime() {
