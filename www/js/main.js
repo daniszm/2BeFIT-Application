@@ -1,4 +1,4 @@
-function calculateBmi() {
+﻿function calculateBmi() {
   var weight = document.bmiForm.weight.value;
   var height = document.bmiForm.height.value;
   if (weight > 0 && height > 0) {
@@ -24,7 +24,7 @@ function calculateBmi() {
     if (finalBmi > 25) {
       BMIconclusion.textContent = "You have overweight."
     }
-    localStorage.setItem("BMI", "At " +  getTimeBMI() + " " + BMIconclusion.textContent);
+    localStorage.setItem("BMI", "Your last BMI is " + finalBmi);
   }
   else {
        alert("PLEASE FILL DATA CORRECTLY")
