@@ -3,7 +3,6 @@
   var height = document.bmiForm.height.value;
   if (weight > 0 && height > 0) {
     var finalBmi = Math.round(weight / (height / 100 * height / 100));
-    // document.bmiForm.bmi.value = finalBmi;
 
     var bmiResult = document.getElementById("bmiResult");
     var BMIconclusion = document.getElementById("BMIconclusion");
@@ -26,7 +25,6 @@
     }
     localStorage.setItem("BMI", "Your last BMI is " + finalBmi);
     var lastBMIresult = localStorage.getItem("BMI");
-    // alert(lastBMIresult);
     $(".bmiLastResult").text(lastBMIresult);
   }
   else {
@@ -175,7 +173,6 @@ $(document).on("pageinit", "#map-page", function () {
 $(document).ready(function () {
 
   $("#bmi").on("click", function() {
-    
     document.getElementById("heightInput").value = "";
     document.getElementById("weightInput2").value = "";
     $("#bmiResult").text("");
@@ -238,12 +235,6 @@ function getExercises() {
       arrreps.push(data.reps);
       arrweight.push(data.weight);
       time.push(data.time);
-
-      // console.log(data.bodyPart);
-      // var test = data.bodyPart;
-      // console.log(test);
-      // output += '<p>'+data.bodyPart+'</p>';
-      //<td>" + [i + 1] + "</td>
     });
 
     arrLen = arrbodyPart.length;
@@ -253,10 +244,5 @@ function getExercises() {
     }
     text += "</tbody></table>";
     document.getElementById("exercisesGrid").innerHTML = text;
-
-    // for (var i=0;i<arr.length;i++) {
-    // 	document.getElementById('exercisesGrid').innerHTML = arr[i];
-    // 	$('#exercisesGrid').append(arr[i]);
-    // }
   });
 }

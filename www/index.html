@@ -1,29 +1,24 @@
 ﻿<!DOCTYPE html>
 <html>
 <head>
-
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta http-equiv="Content-type" content="text/html; charset=utf-8">
   <link rel="stylesheet" type="text/css" href="css/styles.css">
   <link href="https://fonts.googleapis.com/css?family=Titillium+Web" rel="stylesheet">
-  <!--<link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">-->
-  <!--<script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>-->
   <link rel="stylesheet" href="css/jquery.mobile-1.4.5.min.css" />
   <script src="js/jquery-2.1.4.min.js"></script>
   <script src="js/jquery.mobile-1.4.5.min.js"></script>
   <script src="js/main.js"></script>
   <script src="cordova.js"></script>
-  <!--<script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>-->
   <script src="https://maps.googleapis.com/maps/api/js?sensor=false" type="text/javascript"></script>
   <script src="/assets/gmap3.js?body=1" type="text/javascript"></script>
-  <!-- Latest compiled and minified CSS -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 </head>
 <body onload="getExercises()">
+
   <!--MAIN PAGE START-->
   <div data-role="page" id="pageone">
     <div data-role="header" class="header">
-
       <ul class="headerList">
         <li><img src="img/logo.png" class="logo"></li>
         <li><h1 class="appName">2BeFIT</h1></li>
@@ -32,11 +27,31 @@
     <div data-role="main" class="ui-content">
       <div class="container">
         <div class="row">
-          <a href="#trainingPage"><div class="col-md-12 squareElement" id="training"><h2 class="categoryName">TRAINING</h2></div></a>
-          <a href="#statisticsPage" onclick="getExercises()"><div class="col-md-12 squareElement" id="statistics"><h2 class="categoryName">STATISTICS</h2></div></a>
-          <a href="#exercisesPage"><div class="col-md-12 squareElement" id="exercises"><h2 class="categoryName">EXERCISES</h2></div></a>
-          <a href="#map-page"><div class="col-md-12 squareElement" id="gymMap"><h2 class="categoryName">GYM MAP</h2></div></a>
-          <a href="#bmiPage"><div class="col-md-12 squareElement" id="bmi"><h2 class="categoryName">BMI</h2></div></a>
+          <a href="#trainingPage">
+            <div class="col-md-12 squareElement" id="training">
+              <h2 class="categoryName">TRAINING</h2>
+            </div>
+          </a>
+          <a href="#statisticsPage" onclick="getExercises()">
+            <div class="col-md-12 squareElement" id="statistics">
+              <h2 class="categoryName">STATISTICS</h2>
+            </div>
+          </a>
+          <a href="#exercisesPage">
+            <div class="col-md-12 squareElement" id="exercises">
+              <h2 class="categoryName">EXERCISES</h2>
+            </div>
+          </a>
+          <a href="#map-page">
+            <div class="col-md-12 squareElement" id="gymMap">
+              <h2 class="categoryName">GYM MAP</h2>
+            </div>
+          </a>
+          <a href="#bmiPage">
+            <div class="col-md-12 squareElement" id="bmi">
+              <h2 class="categoryName">BMI</h2>
+            </div>
+          </a>
         </div>
       </div>
     </div>
@@ -45,44 +60,87 @@
     </div>
   </div>
   <!--MAIN PAGE END-->
+
   <!--EXERCISES PAGE START-->
   <div data-role="page" id="exercisesPage">
     <div data-role="header" class="header">
-      <div data-role="main" class="backButton"><a href="#pageone"><img src="img/backButton.png"></a></div>
+      <div data-role="main" class="backButton">
+        <a href="#pageone"><img src="img/backButton.png"></a>
+      </div>
       <h1 class="pageName">EXERCISES</h1>
     </div>
     <div data-role="main" class="container-fluid ui-content">
       <div class="row">
-        <a href="#legsPage"><div class="col-md-12 section" id="legs"><h2 class="sectionName">LEGS</h2></div></a>
-        <a href="#chestPage"><div class="col-md-12 section" id="chest"><h2 class="sectionName">CHEST</h2></div></a>
-        <a href="#backPage"><div class="col-md-12 section" id="back"><h2 class="sectionName">BACK</h2></div></a>
-        <a href="#shouldersPage"><div class="col-md-12 section" id="shoulders"><h2 class="sectionName">SHOULDERS</h2></div></a>
-        <a href="#armsPage"><div class="col-md-12 section" id="arms"><h2 class="sectionName">ARMS</h2></div></a>
-        <a href="#absPage"><div class="col-md-12 section" id="abs"><h2 class="sectionName">ABS</h2></div></a>
+        <a href="#legsPage">
+          <div class="col-md-12 section" id="legs">
+            <h2 class="sectionName">LEGS</h2>
+          </div>
+        </a>
+        <a href="#chestPage">
+          <div class="col-md-12 section" id="chest">
+            <h2 class="sectionName">CHEST</h2>
+          </div>
+        </a>
+        <a href="#backPage">
+          <div class="col-md-12 section" id="back">
+            <h2 class="sectionName">BACK</h2>
+          </div>
+        </a>
+        <a href="#shouldersPage">
+          <div class="col-md-12 section" id="shoulders">
+            <h2 class="sectionName">SHOULDERS</h2>
+          </div>
+        </a>
+        <a href="#armsPage">
+          <div class="col-md-12 section" id="arms">
+            <h2 class="sectionName">ARMS</h2>
+          </div>
+        </a>
+        <a href="#absPage">
+          <div class="col-md-12 section" id="abs">
+            <h2 class="sectionName">ABS</h2>
+          </div>
+        </a>
       </div>
     </div>
-
     <div data-role="footer" class="footer">
       <h1>Copyright 2017</h1>
     </div>
   </div>
+  <!--EXERCISES PAGE END-->
 
   <!--LEGS PAGE START-->
   <div data-role="page" id="legsPage">
     <div data-role="header" class="header">
-      <div data-role="main" class="backButton"><a href="#exercisesPage"><img src="img/backButton.png"></a></div>
+      <div data-role="main" class="backButton">
+        <a href="#exercisesPage"><img src="img/backButton.png"></a>
+      </div>
       <h1 class="pageName">LEGS</h1>
     </div>
     <div class="centering">
-      <!--<div class="container-fluid headerImg" id="legsHeaderPhoto">
-      </div>-->
       <br>
       <h2>EXCERCISES:</h2>
       <div data-role="main" class="ui-content">
-        <a href="#barbellSquat"><div class="col-md-12 section"><h2 class="sectionName">Barbell Squat</h2></div></a>
-        <a href="#dumbbellStepUps"><div class="col-md-12 section"><h2 class="sectionName">Step Ups</h2></div></a>
-        <a href="#legPress"><div class="col-md-12 section"><h2 class="sectionName">Leg Press</h2></div></a>
-        <a href="#barbellDeadliftLegs"><div class="col-md-12 section"><h2 class="sectionName">Deadlift</h2></div></a>
+        <a href="#barbellSquat">
+          <div class="col-md-12 section">
+            <h2 class="sectionName">Barbell Squat</h2>
+          </div>
+        </a>
+        <a href="#dumbbellStepUps">
+          <div class="col-md-12 section">
+            <h2 class="sectionName">Step Ups</h2>
+          </div>
+        </a>
+        <a href="#legPress">
+          <div class="col-md-12 section">
+            <h2 class="sectionName">Leg Press</h2>
+          </div>
+        </a>
+        <a href="#barbellDeadliftLegs">
+          <div class="col-md-12 section">
+            <h2 class="sectionName">Deadlift</h2>
+          </div>
+        </a>
       </div>
     </div>
     <div data-role="footer" class="footer">
@@ -90,16 +148,18 @@
     </div>
   </div>
   <!--LEGS PAGE END-->
+
   <!--LEGS SUBPAGE START-->
   <div data-role="page" id="dumbbellStepUps">
     <div data-role="header" class="header">
-      <div data-role="main" class="backButton"><a href="#legsPage"><img src="img/backButton.png"></a></div>
+      <div data-role="main" class="backButton">
+        <a href="#legsPage"><img src="img/backButton.png"></a>
+      </div>
       <h1 class="pageName">Step Ups</h1>
     </div>
     <div data-role="main" class="container-fluid ui-content">
       <div class="row">
         <iframe width="auto" height="315" src="https://www.youtube.com/embed/7AtIjR-QqVA" frameborder="0" allowfullscreen></iframe>
-
         <div class="guide">
           <h3 class="excerciseGuide">EXERCISE GUIDE:</h3>
           <div class="description">
@@ -113,7 +173,6 @@
         </div>
       </div>
     </div>
-
     <div data-role="footer" class="footer">
       <h1>Copyright 2017</h1>
     </div>
@@ -127,7 +186,6 @@
     <div data-role="main" class="container-fluid ui-content">
       <div class="row">
         <iframe width="auto" height="315" src="https://www.youtube.com/embed/3R0SOJ3alTA" frameborder="0" allowfullscreen></iframe>
-
         <div class="guide">
           <h3 class="excerciseGuide">EXERCISE GUIDE:</h3>
           <div class="description">
@@ -142,7 +200,6 @@
         </div>
       </div>
     </div>
-
     <div data-role="footer" class="footer">
       <h1>Copyright 2017</h1>
     </div>
@@ -150,7 +207,9 @@
 
   <div data-role="page" id="barbellSquat">
     <div data-role="header" class="header">
-      <div data-role="main" class="backButton"><a href="#legsPage"><img src="img/backButton.png"></a></div>
+      <div data-role="main" class="backButton">
+        <a href="#legsPage"><img src="img/backButton.png"></a>
+      </div>
       <h1 class="pageName">Barbell Squat</h1>
     </div>
     <div data-role="main" class="container-fluid ui-content">
@@ -168,7 +227,6 @@
         </div>
       </div>
     </div>
-
     <div data-role="footer" class="footer">
       <h1>Copyright 2017</h1>
     </div>
@@ -176,7 +234,9 @@
 
   <div data-role="page" id="barbellDeadliftLegs">
     <div data-role="header" class="header">
-      <div data-role="main" class="backButton"><a href="#legsPage"><img src="img/backButton.png"></a></div>
+      <div data-role="main" class="backButton">
+        <a href="#legsPage"><img src="img/backButton.png"></a>
+      </div>
       <h1 class="pageName">Deadlift</h1>
     </div>
     <div data-role="main" class="container-fluid ui-content">
@@ -186,7 +246,7 @@
           <h3 class="excerciseGuide">EXERCISE GUIDE:</h3>
           <div class="description">
             <ol>
-              <li>  Approach the bar so that it is centered over your feet. Your feet should be about hip-width apart. Bend at the hip to grip the bar at shoulder-width allowing your shoulder blades to protract. Typically, you would use an alternating grip. </li>
+              <li> Approach the bar so that it is centered over your feet. Your feet should be about hip-width apart. Bend at the hip to grip the bar at shoulder-width allowing your shoulder blades to protract. Typically, you would use an alternating grip. </li>
               <li> With your feet and your grip set, take a big breath and then lower your hips and flex the knees until your shins contact the bar. Look forward with your head. Keep your chest up and your back arched, and begin driving through the heels to move the weight upward. </li>
               <li> After the bar passes the knees aggressively pull the bar back, pulling your shoulder blades together as you drive your hips forward into the bar. </li>
               <li> Lower the bar by bending at the hips and guiding it to the floor. </li>
@@ -195,40 +255,58 @@
         </div>
       </div>
     </div>
-
     <div data-role="footer" class="footer">
       <h1>Copyright 2017</h1>
     </div>
   </div>
   <!--LEGS SUBPAGE END-->
+
   <!-- CHEST PAGE START -->
   <div data-role="page" id="chestPage">
     <div data-role="header" class="header">
-      <div data-role="main" class="backButton"><a href="#exercisesPage"><img src="img/backButton.png"></a></div>
+      <div data-role="main" class="backButton">
+        <a href="#exercisesPage"><img src="img/backButton.png"></a>
+      </div>
       <h1 class="pageName">CHEST</h1>
     </div>
     <div class="centering">
-      <!--<div class="container-fluid headerImg" id="legsHeaderPhoto">
-      </div>--> 
       <br>
       <h2>EXCERCISES:</h2>
       <div data-role="main" class="ui-content">
-        <a href="#barbellBenchPress"><div class="col-md-12 section"><h2 class="sectionName">BB Bench</h2></div></a>
-        <a href="#dumbbellBenchPress"><div class="col-md-12 section"><h2 class="sectionName">DB Bench</h2></div></a>
-        <a href="#pushups"><div class="col-md-12 section"><h2 class="sectionName">Pushups</h2></div></a>
-        <a href="#cableCrossover"><div class="col-md-12 section"><h2 class="sectionName">Crossover</h2></div></a>
+        <a href="#barbellBenchPress">
+          <div class="col-md-12 section">
+            <h2 class="sectionName">BB Bench</h2>
+          </div>
+        </a>
+        <a href="#dumbbellBenchPress">
+          <div class="col-md-12 section">
+            <h2 class="sectionName">DB Bench</h2>
+          </div>
+        </a>
+        <a href="#pushups">
+          <div class="col-md-12 section">
+            <h2 class="sectionName">Pushups</h2>
+          </div>
+        </a>
+        <a href="#cableCrossover">
+          <div class="col-md-12 section">
+            <h2 class="sectionName">Crossover</h2>
+          </div>
+        </a>
       </div>
-
     </div>
     <div data-role="footer" class="footer">
       <h1>Copyright 2017</h1>
     </div>
   </div>
   <!--CHEST PAGE END-->
+
   <!--CHEST SUBPAGE START-->
   <div data-role="page" id="barbellBenchPress">
     <div data-role="header" class="header">
-      <div data-role="main" class="backButton"><a href="#chestPage"><img src="img/backButton.png"></a></div>
+      <div data-role="main" class="backButton">
+        <a href="#chestPage"><img src="img/backButton.png"></a>
+        </div>
       <h1 class="pageName">BB Bench</h1>
     </div>
     <div data-role="main" class="container-fluid ui-content">
@@ -248,7 +326,6 @@
         </div>
       </div>
     </div>
-
     <div data-role="footer" class="footer">
       <h1>Copyright 2017</h1>
     </div>
@@ -256,7 +333,9 @@
 
   <div data-role="page" id="dumbbellBenchPress">
     <div data-role="header" class="header">
-      <div data-role="main" class="backButton"><a href="#chestPage"><img src="img/backButton.png"></a></div>
+      <div data-role="main" class="backButton">
+        <a href="#chestPage"><img src="img/backButton.png"></a>
+      </div>
       <h1 class="pageName">DB Bench</h1>
     </div>
     <div data-role="main" class="container-fluid ui-content">
@@ -276,7 +355,6 @@
         </div>
       </div>
     </div>
-
     <div data-role="footer" class="footer">
       <h1>Copyright 2017</h1>
     </div>
@@ -284,7 +362,9 @@
 
   <div data-role="page" id="pushups">
     <div data-role="header" class="header">
-      <div data-role="main" class="backButton"><a href="#chestPage"><img src="img/backButton.png"></a></div>
+      <div data-role="main" class="backButton">
+        <a href="#chestPage"><img src="img/backButton.png"></a>
+      </div>
       <h1 class="pageName">Pushups</h1>
     </div>
     <div data-role="main" class="container-fluid ui-content">
@@ -303,7 +383,6 @@
         </div>
       </div>
     </div>
-
     <div data-role="footer" class="footer">
       <h1>Copyright 2017</h1>
     </div>
@@ -311,7 +390,9 @@
 
   <div data-role="page" id="cableCrossover">
     <div data-role="header" class="header">
-      <div data-role="main" class="backButton"><a href="#chestPage"><img src="img/backButton.png"></a></div>
+      <div data-role="main" class="backButton">
+        <a href="#chestPage"><img src="img/backButton.png"></a>
+      </div>
       <h1 class="pageName">Crossover</h1>
     </div>
     <div data-role="main" class="container-fluid ui-content">
@@ -332,13 +413,12 @@
         </div>
       </div>
     </div>
-
     <div data-role="footer" class="footer">
       <h1>Copyright 2017</h1>
     </div>
   </div>
-
   <!--CHEST SUBPAGE END-->
+
   <!-- BACK PAGE START -->
   <div data-role="page" id="backPage">
     <div data-role="header" class="header">
@@ -351,10 +431,26 @@
       <br>
       <h2>EXCERCISES:</h2>
       <div data-role="main" class="ui-content">
-        <a href="#barbellDeadlift"><div class="col-md-12 section"><h2 class="sectionName">Deadlift</h2></div></a>
-        <a href="#reverseGrip"><div class="col-md-12 section"><h2 class="sectionName">Reverse Grip</h2></div></a>
-        <a href="#pullups"><div class="col-md-12 section"><h2 class="sectionName">Pullups</h2></div></a>
-        <a href="#cableRows"><div class="col-md-12 section"><h2 class="sectionName">Cable Rows</h2></div></a>
+        <a href="#barbellDeadlift">
+          <div class="col-md-12 section">
+            <h2 class="sectionName">Deadlift</h2>
+          </div>
+        </a>
+        <a href="#reverseGrip">
+          <div class="col-md-12 section">
+            <h2 class="sectionName">Reverse Grip</h2>
+          </div>
+        </a>
+        <a href="#pullups">
+          <div class="col-md-12 section">
+            <h2 class="sectionName">Pullups</h2>
+          </div>
+        </a>
+        <a href="#cableRows">
+          <div class="col-md-12 section">
+            <h2 class="sectionName">Cable Rows</h2>
+          </div>
+        </a>
       </div>
     </div>
     <div data-role="footer" class="footer">
@@ -362,10 +458,13 @@
     </div>
   </div>
   <!--BACK PAGE END-->
+
   <!-- BACK SUBPAGE START -->
   <div data-role="page" id="barbellDeadlift">
     <div data-role="header" class="header">
-      <div data-role="main" class="backButton"><a href="#backPage"><img src="img/backButton.png"></a></div>
+      <div data-role="main" class="backButton">
+        <a href="#backPage"><img src="img/backButton.png"></a>
+      </div>
       <h1 class="pageName">Deadlift</h1>
     </div>
     <div data-role="main" class="container-fluid ui-content">
@@ -392,13 +491,14 @@
 
   <div data-role="page" id="reverseGrip">
     <div data-role="header" class="header">
-      <div data-role="main" class="backButton"><a href="#backPage"><img src="img/backButton.png"></a></div>
+      <div data-role="main" class="backButton">
+        <a href="#backPage"><img src="img/backButton.png"></a>
+      </div>
       <h1 class="pageName">Reverse Grip</h1>
     </div>
     <div data-role="main" class="container-fluid ui-content">
       <div class="row">
         <iframe width="auto" height="315" src="https://www.youtube.com/embed/0RyZHNgCiqQ" frameborder="0" allowfullscreen></iframe>
-
         <div class="guide">
           <h3 class="excerciseGuide">EXERCISE GUIDE:</h3>
           <div class="description">
@@ -411,7 +511,6 @@
         </div>
       </div>
     </div>
-
     <div data-role="footer" class="footer">
       <h1>Copyright 2017</h1>
     </div>
@@ -425,7 +524,6 @@
     <div data-role="main" class="container-fluid ui-content">
       <div class="row">
         <iframe width="auto" height="315" src="https://www.youtube.com/embed/0RyZHNgCiqQ" frameborder="0" allowfullscreen></iframe>
-
         <div class="guide">
           <h3 class="excerciseGuide">EXERCISE GUIDE:</h3>
           <div class="description">
@@ -440,7 +538,6 @@
         </div>
       </div>
     </div>
-
     <div data-role="footer" class="footer">
       <h1>Copyright 2017</h1>
     </div>
@@ -454,7 +551,6 @@
     <div data-role="main" class="container-fluid ui-content">
       <div class="row">
         <iframe width="auto" height="315" src="https://www.youtube.com/embed/IzoCF_b3cIY" frameborder="0" allowfullscreen></iframe>
-
         <div class="guide">
           <h3 class="excerciseGuide">EXERCISE GUIDE:</h3>
           <div class="description">
@@ -469,13 +565,12 @@
         </div>
       </div>
     </div>
-
     <div data-role="footer" class="footer">
       <h1>Copyright 2017</h1>
     </div>
   </div>
-
   <!-- BACK SUBPAGE START -->
+
   <!-- SHOULDERS PAGE START -->
   <div data-role="page" id="shouldersPage">
     <div data-role="header" class="header">
@@ -483,15 +578,29 @@
       <h1 class="pageName">SHOULDERS</h1>
     </div>
     <div class="centering">
-      <!--<div class="container-fluid headerImg" id="legsHeaderPhoto">
-      </div>-->
       <br>
       <h2>EXCERCISES:</h2>
       <div data-role="main" class="ui-content">
-        <a href="#pushPress"><div class="col-md-12 section"><h2 class="sectionName">Push Press</h2></div></a>
-        <a href="#BBshoulderPress"><div class="col-md-12 section"><h2 class="sectionName">BB Shoulder</h2></div></a>
-        <a href="#DBshoulderPress"><div class="col-md-12 section"><h2 class="sectionName">DB Shoulder</h2></div></a>
-        <a href="#militaryPress"><div class="col-md-12 section"><h2 class="sectionName">Military Press</h2></div></a>
+        <a href="#pushPress">
+          <div class="col-md-12 section">
+            <h2 class="sectionName">Push Press</h2>
+          </div>
+        </a>
+        <a href="#BBshoulderPress">
+          <div class="col-md-12 section">
+            <h2 class="sectionName">BB Shoulder</h2>
+          </div>
+        </a>
+        <a href="#DBshoulderPress">
+          <div class="col-md-12 section">
+            <h2 class="sectionName">DB Shoulder</h2>
+          </div>
+        </a>
+        <a href="#militaryPress">
+          <div class="col-md-12 section"
+            ><h2 class="sectionName">Military Press</h2>
+          </div>
+        </a>
       </div>
     </div>
     <div data-role="footer" class="footer">
@@ -499,6 +608,7 @@
     </div>
   </div>
   <!--SHOULDERS PAGE END-->
+
   <!--SHOULDERS SUBPAGE START-->
   <div data-role="page" id="pushPress">
     <div data-role="header" class="header">
@@ -523,7 +633,6 @@
         </div>
       </div>
     </div>
-
     <div data-role="footer" class="footer">
       <h1>Copyright 2017</h1>
     </div>
@@ -531,7 +640,9 @@
 
   <div data-role="page" id="BBshoulderPress">
     <div data-role="header" class="header">
-      <div data-role="main" class="backButton"><a href="#shouldersPage"><img src="img/backButton.png"></a></div>
+      <div data-role="main" class="backButton">
+        <a href="#shouldersPage"><img src="img/backButton.png"></a>
+      </div>
       <h1 class="pageName">BB Shoulder</h1>
     </div>
     <div data-role="main" class="container-fluid ui-content">
@@ -551,7 +662,6 @@
         </div>
       </div>
     </div>
-
     <div data-role="footer" class="footer">
       <h1>Copyright 2017</h1>
     </div>
@@ -559,7 +669,9 @@
 
   <div data-role="page" id="DBshoulderPress">
     <div data-role="header" class="header">
-      <div data-role="main" class="backButton"><a href="#shouldersPage"><img src="img/backButton.png"></a></div>
+      <div data-role="main" class="backButton">
+        <a href="#shouldersPage"><img src="img/backButton.png"></a>
+      </div>
       <h1 class="pageName">DB Shoulder</h1>
     </div>
     <div data-role="main" class="container-fluid ui-content">
@@ -580,7 +692,6 @@
         </div>
       </div>
     </div>
-
     <div data-role="footer" class="footer">
       <h1>Copyright 2017</h1>
     </div>
@@ -588,7 +699,9 @@
 
   <div data-role="page" id="militaryPress">
     <div data-role="header" class="header">
-      <div data-role="main" class="backButton"><a href="#shouldersPage"><img src="img/backButton.png"></a></div>
+      <div data-role="main" class="backButton">
+        <a href="#shouldersPage"><img src="img/backButton.png"></a>
+      </div>
       <h1 class="pageName">Military Press</h1>
     </div>
     <div data-role="main" class="container-fluid ui-content">
@@ -609,25 +722,24 @@
         </div>
       </div>
     </div>
-
     <div data-role="footer" class="footer">
       <h1>Copyright 2017</h1>
     </div>
   </div>
   <!--SHOULDERS SUBPAGE END-->
+
   <!-- ARMS PAGE START -->
   <div data-role="page" id="armsPage">
     <div data-role="header" class="header">
-      <div data-role="main" class="backButton"><a href="#exercisesPage"><img src="img/backButton.png"></a></div>
+      <div data-role="main" class="backButton">
+        <a href="#exercisesPage"><img src="img/backButton.png"></a>
+      </div>
       <h1 class="pageName">ARMS</h1>
     </div>
     <div class="centering">
-      <!--<div class="container-fluid headerImg" id="legsHeaderPhoto">
-      </div>-->
       <br>
       <h2>EXCERCISES:</h2>
       <div data-role="main" class="ui-content">
-
         <a href="#bicepsBarbellCurl"><div class="col-md-12 section"><h2 class="sectionName">Barbell Curl</h2></div></a>
         <a href="#bicepsHammerCurl"><div class="col-md-12 section"><h2 class="sectionName">Hammer Curl</h2></div></a>
         <a href="#tricepsPushdown"><div class="col-md-12 section"><h2 class="sectionName">Pushdown</h2></div></a>
@@ -639,10 +751,13 @@
     </div>
   </div>
   <!--ARMS PAGE END-->
+
   <!-- ARMS SUBPAGE PAGE START -->
   <div data-role="page" id="bicepsBarbellCurl">
     <div data-role="header" class="header">
-      <div data-role="main" class="backButton"><a href="#armsPage"><img src="img/backButton.png"></a></div>
+      <div data-role="main" class="backButton">
+        <a href="#armsPage"><img src="img/backButton.png"></a>
+      </div>
       <h1 class="pageName">Barbell Curl</h1>
     </div>
     <div data-role="main" class="container-fluid ui-content">
@@ -662,7 +777,6 @@
         </div>
       </div>
     </div>
-
     <div data-role="footer" class="footer">
       <h1>Copyright 2017</h1>
     </div>
@@ -670,7 +784,9 @@
 
   <div data-role="page" id="bicepsHammerCurl">
     <div data-role="header" class="header">
-      <div data-role="main" class="backButton"><a href="#armsPage"><img src="img/backButton.png"></a></div>
+      <div data-role="main" class="backButton">
+        <a href="#armsPage"><img src="img/backButton.png"></a>
+      </div>
       <h1 class="pageName">Hammer Curl</h1>
     </div>
     <div data-role="main" class="container-fluid ui-content">
@@ -690,7 +806,6 @@
         </div>
       </div>
     </div>
-
     <div data-role="footer" class="footer">
       <h1>Copyright 2017</h1>
     </div>
@@ -698,7 +813,9 @@
 
   <div data-role="page" id="tricepsPushdown">
     <div data-role="header" class="header">
-      <div data-role="main" class="backButton"><a href="#armsPage"><img src="img/backButton.png"></a></div>
+      <div data-role="main" class="backButton">
+        <a href="#armsPage"><img src="img/backButton.png"></a>
+      </div>
       <h1 class="pageName">Pushdown</h1>
     </div>
     <div data-role="main" class="container-fluid ui-content">
@@ -718,7 +835,6 @@
         </div>
       </div>
     </div>
-
     <div data-role="footer" class="footer">
       <h1>Copyright 2017</h1>
     </div>
@@ -726,7 +842,9 @@
 
   <div data-role="page" id="tricepsBenchPress">
     <div data-role="header" class="header">
-      <div data-role="main" class="backButton"><a href="#armsPage"><img src="img/backButton.png"></a></div>
+      <div data-role="main" class="backButton">
+        <a href="#armsPage"><img src="img/backButton.png"></a>
+      </div>
       <h1 class="pageName">Bench Press</h1>
     </div>
     <div data-role="main" class="container-fluid ui-content">
@@ -746,12 +864,12 @@
         </div>
       </div>
     </div>
-
     <div data-role="footer" class="footer">
       <h1>Copyright 2017</h1>
     </div>
   </div>
   <!-- ARMS SUBPAGE PAGE START -->
+
   <!-- ABS PAGE START -->
   <div data-role="page" id="absPage">
     <div data-role="header" class="header">
@@ -759,15 +877,29 @@
       <h1 class="pageName">ABS</h1>
     </div>
     <div class="centering">
-      <!--<div class="container-fluid headerImg" id="legsHeaderPhoto">
-      </div>-->
       <br>
       <h2>EXCERCISES:</h2>
       <div data-role="sitUp" class="ui-content">
-        <a href="#sitUp"><div class="col-md-12 section"><h2 class="sectionName">Sit Up</h2></div></a>
-        <a href="#jackknifeSitUp"><div class="col-md-12 section"><h2 class="sectionName">Jackknife Sit Up</h2></div></a>
-        <a href="#cableCrunch"><div class="col-md-12 section"><h2 class="sectionName">Cable Crunch</h2></div></a>
-        <a href="#plank"><div class="col-md-12 section"><h2 class="sectionName">Plank</h2></div></a>
+        <a href="#sitUp">
+          <div class="col-md-12 section">
+            <h2 class="sectionName">Sit Up</h2>
+          </div>
+        </a>
+        <a href="#jackknifeSitUp">
+          <div class="col-md-12 section">
+            <h2 class="sectionName">Jackknife Sit Up</h2>
+          </div>
+        </a>
+        <a href="#cableCrunch">
+          <div class="col-md-12 section">
+            <h2 class="sectionName">Cable Crunch</h2>
+          </div>
+        </a>
+        <a href="#plank">
+          <div class="col-md-12 section">
+            <h2 class="sectionName">Plank</h2>
+          </div>
+        </a>
       </div>
     </div>
     <div data-role="footer" class="footer">
@@ -775,10 +907,13 @@
     </div>
   </div>
   <!--ABS PAGE END-->
+
   <!--ABS SUBPAGE START-->
   <div data-role="page" id="sitUp">
     <div data-role="header" class="header">
-      <div data-role="main" class="backButton"><a href="#absPage"><img src="img/backButton.png"></a></div>
+      <div data-role="main" class="backButton">
+        <a href="#absPage"><img src="img/backButton.png"></a>
+      </div>
       <h1 class="pageName">Sit Up</h1>
     </div>
     <div data-role="main" class="container-fluid ui-content">
@@ -798,16 +933,16 @@
         </div>
       </div>
     </div>
-
     <div data-role="footer" class="footer">
       <h1>Copyright 2017</h1>
     </div>
   </div>
 
-
   <div data-role="page" id="jackknifeSitUp">
     <div data-role="header" class="header">
-      <div data-role="main" class="backButton"><a href="#absPage"><img src="img/backButton.png"></a></div>
+      <div data-role="main" class="backButton">
+        <a href="#absPage"><img src="img/backButton.png"></a>
+      </div>
       <h1 class="pageName">Jackknife Sit Up</h1>
     </div>
     <div data-role="main" class="container-fluid ui-content">
@@ -826,16 +961,16 @@
         </div>
       </div>
     </div>
-
     <div data-role="footer" class="footer">
       <h1>Copyright 2017</h1>
     </div>
   </div>
 
-
   <div data-role="page" id="cableCrunch">
     <div data-role="header" class="header">
-      <div data-role="main" class="backButton"><a href="#absPage"><img src="img/backButton.png"></a></div>
+      <div data-role="main" class="backButton">
+        <a href="#absPage"><img src="img/backButton.png"></a>
+      </div>
       <h1 class="pageName">Cable Crunch</h1>
     </div>
     <div data-role="main" class="container-fluid ui-content">
@@ -856,16 +991,16 @@
         </div>
       </div>
     </div>
-
     <div data-role="footer" class="footer">
       <h1>Copyright 2017</h1>
     </div>
   </div>
 
-
   <div data-role="page" id="plank">
     <div data-role="header" class="header">
-      <div data-role="main" class="backButton"><a href="#absPage"><img src="img/backButton.png"></a></div>
+      <div data-role="main" class="backButton">
+        <a href="#absPage"><img src="img/backButton.png"></a>
+      </div>
       <h1 class="pageName">Plank</h1>
     </div>
     <div data-role="main" class="container-fluid ui-content">
@@ -882,23 +1017,24 @@
         </div>
       </div>
     </div>
-
     <div data-role="footer" class="footer">
       <h1>Copyright 2017</h1>
     </div>
   </div>
   <!--ABS SUBPAGE END-->
-  <!--EXERCISES END-->
-  <!-- TRAINING PAGE START -->
 
+  <!--EXERCISES END-->
+
+  <!-- TRAINING PAGE START -->
   <div data-role="page" id="trainingPage">
     <div data-role="header" class="header">
-      <div data-role="main" class="backButton"><a href="#pageone"><img src="img/backButton.png"></a></div>
+      <div data-role="main" class="backButton">
+        <a href="#pageone"><img src="img/backButton.png"></a>
+      </div>
       <h1 class="pageName">TRAINING</h1>
     </div>
     <div class="centering">
-      <div class="container-fluid headerImg" id="training"></div> <!-- TODO CHANGE IMG-->
-
+      <div class="container-fluid headerImg" id="training"></div>
       <div data-role="main" class="ui-content">
         <form method="post" action="/action_page_post.php">
           <label for="select-choice-a" class="select">Body part:</label>
@@ -927,17 +1063,18 @@
       </div>
     </div>
   </div>
-
   <!-- TRAINING PAGE END -->
+
   <!--STATISTICS PAGE START-->
   <div data-role="page" id="statisticsPage">
     <div data-role="header" class="header">
-      <div data-role="main" class="backButton"><a href="#pageone"><img src="img/backButton.png"></a></div>
+      <div data-role="main" class="backButton">
+        <a href="#pageone"><img src="img/backButton.png"></a>
+      </div>
       <h1 class="pageName">STATISTICS</h1>
     </div>
     <div class="centering">
       <div class="container-fluid headerImg" id="statisticsPhoto"></div>
-
       <div data-role="main" class="ui-content">
         <div id="exercisesGrid" class="container-fluid"><p class="loadingText">LOADING STATISTICS...</p></div>
       </div>
@@ -947,19 +1084,21 @@
     </div>
   </div>
   <!--STATISTICS PAGE END-->
+
   <!--BMI PAGE START-->
   <div data-role="page" id="bmiPage">
     <div data-role="header" class="header">
-      <div data-role="main" class="backButton"><a href="#pageone"><img src="img/backButton.png"></a></div>
+      <div data-role="main" class="backButton">
+        <a href="#pageone"><img src="img/backButton.png"></a>
+      </div>
       <h1 class="pageName">BMI</h1>
     </div>
     <div class="centering">
       <div class="container-fluid headerImg" id="bmiPhoto"></div>
-
       <div data-role="main" class="ui-content">
         <form name="bmiForm">
-          <h3 class="bmiHeading">Your Weight (KG):</h3> <input type="text" name="weight" id="weightInput2" class="BMIinput" size="20"><br />
-          <h3 class="bmiHeading">Your Height (CM):</h3> <input type="text" name="height" id="heightInput" class="BMIinput" size="20"><br />
+          <h3 class="bmiHeading">Your Weight (KG):</h3> <input type="text" name="weight" id="weightInput2" class="BMIinput" size="20"><br>
+          <h3 class="bmiHeading">Your Height (CM):</h3> <input type="text" name="height" id="heightInput" class="BMIinput" size="20"><br>
           <button type="button" class="BMIbutton" value="Calculate BMI" onClick="calculateBmi()">CALCULATE</button>
           <input type="reset" class="BMIbutton" id="resetButton" value="RESET" />
           <h3 class="bmiHeading result"><span id="bmiResult"></span></h3>
@@ -973,30 +1112,19 @@
     </div>
   </div>
   <!--BMI PAGE END-->
+
   <!--MAP PAGE START-->
   <div data-role="page" id="map-page" data-url="map-page">
     <div data-role="header" class="header" id="mapHeader">
       <div data-role="main" class="backButton"><a href="#pageone"><img src="img/backButton.png"></a></div>
       <h1 class="pageName">MAP</h1>
     </div>
-
-    <!--<div role="main" class="ui-content" id="mapaTEST">
-      <iframe src="https://www.google.com/maps/d/embed?mid=1vZletOpiQODWjmiGL32wmQHkmSI" width="100%" height="400px"></iframe>
-    </div>-->
-
     <div role="main" class="ui-content" id="map-canvas">
       <!-- map loads here... -->
     </div>
-
     <div data-role="footer" class="footer">
       <h1>Copyright 2017</h1>
     </div>
   </div>
-  <!--BMI PAGE END-->
-  <!--<div data-role="page" id="map-page" data-url="map-page">
-    <div data-role="header" data-theme="a">
-      <h1>Maps</h1>
-    </div>
-  </div>-->
 </body>
 </html>
